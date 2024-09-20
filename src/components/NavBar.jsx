@@ -7,10 +7,10 @@ export default function NavBar() {
   const [sModeDropdownVisible, setSModeDropdownVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // const handleMouseOverServices = () => setServicesDropdownVisible(true);
-  // const handleMouseOutServices = () => setServicesDropdownVisible(false);
-  // const handleMouseOverSMode = () => setSModeDropdownVisible(true);
-  // const handleMouseOutSMode = () => setSModeDropdownVisible(false);
+  // const showServicesDropdown = () => setServicesDropdownVisible(true);
+  // const hideServicesDropdown = () => setServicesDropdownVisible(false);
+  // const showSModeDropdown = () => setSModeDropdownVisible(true);
+  // const hideSModeDropdown = () => setSModeDropdownVisible(false);
 
   //Checking if the device is mobile
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function NavBar() {
     checkMobile();
     window.addEventListener("resize", checkMobile);
 
-    return () => window.removeEventListener("resize, checkMobile");
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   const toggleServicesDropdown = () =>
@@ -28,12 +28,19 @@ export default function NavBar() {
   const toggleSModeDropdown = () =>
     setSModeDropdownVisible(!sModeDropdownVisible);
 
-  const handleMouseOverServices = () =>
+  //Show Services dropdown
+  const showServicesDropdown = () =>
     !isMobile && setServicesDropdownVisible(true);
-  const handleMouseOutServices = () =>
+
+  //Hide Services dropdown
+  const hideServicesDropdown = () =>
     !isMobile && setServicesDropdownVisible(false);
-  const handleMouseOverSMode = () => !isMobile && setSModeDropdownVisible(true);
-  const handleMouseOutSMode = () => !isMobile && setSModeDropdownVisible(false);
+
+  //Show SMode dropdown
+  const showSModeDropdown = () => !isMobile && setSModeDropdownVisible(true);
+
+  //Show SMode dropdown
+  const hideSModeDropdown = () => !isMobile && setSModeDropdownVisible(false);
 
   return (
     <div>
@@ -49,7 +56,7 @@ export default function NavBar() {
           </Link>
           <FaBars className="mobile-menu hidden" id="mobile-cta" />
 
-          <nav className="navigation w-6/12 ">
+          <nav className="navigation w-6/12 pointe">
             <img
               id="mobile-exit"
               className="mobile-menu-exit hidden"
@@ -68,55 +75,52 @@ export default function NavBar() {
                   About Us
                 </Link>
               </li>
-              <li className="link linkdrop">
-                <div
-                  className="links flex items-center hover:text-secondary"
-                  onMouseOver={handleMouseOverServices}
-                  onMouseOut={handleMouseOutServices}
-                  onClick={!isMobile ? toggleServicesDropdown : null}>
+              <li
+                className="link linkdrop"
+                onMouseOver={showServicesDropdown}
+                onMouseOut={hideServicesDropdown}
+                onClick={!isMobile ? toggleServicesDropdown : null}>
+                <button className="links flex items-center hover:text-secondary">
                   services
                   <FaCaretDown className="fa-caret-down" />
-                </div>
+                </button>
                 {servicesDropdownVisible && (
                   <ul
-                    className="dropdown absolute bg-tertiary"
-                    id="dropdown-ul">
-                    <li className="dropdown-link">
-                      <Link
-                        to="/domestic"
-                        className="links hover:text-secondary">
+                    className="dropdown mt-1 p-4 absolute bg-tertiary text-[1em] w-[20vw] h-[40vh] pointer"
+                    id="dropdown-ul"
+                    onMouseOver={showServicesDropdown} //Keep dropdown open when hovering over the dropdown
+                    onMouseOut={hideServicesDropdown} //Close dropdown when moving mouse out of dropdown services
+                  >
+                    <li className="dropdown-link pb-3 hover:text-secondary ">
+                      <Link to="/domestic" className="links  ">
                         Domestic Logistics
                       </Link>
                     </li>
-                    <li className="dropdown-link">
-                      <Link
-                        to="/coperate"
-                        className="links hover:text-secondary">
+                    <li className="dropdown-link pb-3 hover:text-secondary">
+                      <Link to="/coperate" className="links ">
                         Coperate Logistics
                       </Link>
                     </li>
-                    <li className="dropdown-link">
-                      <Link
-                        to="/overseas"
-                        className="links hover:text-secondary">
+                    <li className="dropdown-link pb-3 hover:text-secondary">
+                      <Link to="/overseas" className="links">
                         Overseas Shipping
                       </Link>
                     </li>
-                    <li className="dropdown-link">
+                    <li className="dropdown-link pb-3">
                       <Link
                         to="/ecommerce"
                         className="links hover:text-secondary">
                         E-commerce Logistics
                       </Link>
                     </li>
-                    <li className="dropdown-link">
+                    <li className="dropdown-link pb-3">
                       <Link
                         to="/pet-transport"
                         className="links hover:text-secondary">
                         Pet Transport
                       </Link>
                     </li>
-                    <li className="dropdown-link">
+                    <li className="dropdown-link pb-3">
                       <Link
                         to="/separate-delivery"
                         className="links hover:text-secondary">
@@ -131,49 +135,46 @@ export default function NavBar() {
                   Tracking
                 </Link>
               </li>
-              <li className="link linkdrop">
-                <div
-                  className="links flex items-center hover:text-secondary"
-                  onMouseOver={handleMouseOverSMode}
-                  onMouseOut={handleMouseOutSMode}
-                  onClick={!isMobile ? toggleSModeDropdown : null}>
+              <li
+                className="link linkdrop"
+                onMouseOver={showSModeDropdown}
+                onMouseOut={hideSModeDropdown}
+                onClick={!isMobile ? toggleSModeDropdown : null}>
+                <button className="links flex items-center hover:text-secondary">
                   S-Mode
                   <FaCaretDown className="fa-caret-down" />
-                </div>
+                </button>
                 {sModeDropdownVisible && (
                   <ul
-                    className="dropdown absolute bg-secondary "
-                    id="dropdown-ul">
-                    <li className="dropdown-link">
-                      <Link
-                        to="/airfreight"
-                        className="links hover:text-tertiary">
+                    className="dropdown mt-1 p-4 absolute bg-tertiary text-[1em] w-[18vw] h-[20vh] pointer"
+                    id="dropdown-ul"
+                    onMouseOver={showSModeDropdown} //Keep dropdown open when hovering over the dropdown
+                    onMouseOut={hideSModeDropdown} //Close dropdown when moving mouse out of dropdown
+                  >
+                    <li className="dropdown-link pb-3 hover:text-secondary">
+                      <Link to="/airfreight" className="links">
                         Air Freight
                       </Link>
                     </li>
-                    <li className="dropdown-link">
-                      <Link
-                        to="/oceanfrieght"
-                        className="links hover:text-tertiary">
+                    <li className="dropdown-link pb-3 hover:text-secondary">
+                      <Link to="/oceanfrieght" className="links">
                         Ocean Freight
                       </Link>
                     </li>
-                    <li className="dropdown-link">
-                      <Link
-                        to="/land-transport"
-                        className="links hover:text-tertiary">
+                    <li className="dropdown-link pb-3 hover:text-secondary">
+                      <Link to="/land-transport" className="links">
                         Land Transport
                       </Link>
                     </li>
                   </ul>
                 )}
               </li>
-              <li className="link hover:text-tertiary">
+              <li className="link hover:text-secondary">
                 <Link to="/faqs" className="links">
                   Faqs
                 </Link>
               </li>
-              <li className="link hover:text-tertiary">
+              <li className="link hover:text-secondary">
                 <Link to="/contact" className="links">
                   Contact Us
                 </Link>
