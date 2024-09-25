@@ -44,8 +44,8 @@ export default function NavBar() {
 
   return (
     <div>
-      <div className="container w-screen bg-primary fixed top-0">
-        <div className="content w-11/18 flex justify-between items-center text-white px-24">
+      <div className="w-full bg-primary fixed top-0">
+        <div className="w-[98%] px-24 flex justify-between items-center text-white">
           <Link to="/" className="logo w-24 flex items-center">
             <img
               src="../../assets/images/logo.png"
@@ -81,7 +81,7 @@ export default function NavBar() {
                 onMouseOut={hideServicesDropdown}
                 onClick={!isMobile ? toggleServicesDropdown : null}>
                 <button className="links flex items-center hover:text-secondary">
-                  services
+                  Services
                   <FaCaretDown className="fa-caret-down" />
                 </button>
                 {servicesDropdownVisible && (

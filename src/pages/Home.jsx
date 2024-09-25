@@ -14,8 +14,8 @@ export default function Home() {
 
       {/* Section-1 Starts Here */}
       <div className="mt-20 px-24 content-center bg-[url(https://odysseyuae.com/wp-content/uploads/2019/06/slider-2.jpg)] bg-cover h-svh  ">
-        <p className="provide pt-8 text-5xl text-center">
-          Provide Your Tracking ID To Track Your Shipment Progress.
+        <p className="provide pt-8 text-5xl text-center capitalize">
+          Provide Your Tracking ID To Track Your shipment progress.
         </p>
         <div className="input-track-div flex justify-center mt-5">
           <form method="post" action="" className="flex rounded-lg w-5/18">
