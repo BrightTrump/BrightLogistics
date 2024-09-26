@@ -92,7 +92,7 @@ export default function NavBar() {
                       <Link to="/domestic">Domestic Logistics</Link>
                     </li>
                     <li className="pb-5 hover:text-secondary">
-                      <Link to="/coperate">Coperate Logistics</Link>
+                      <Link to="/coperate">Coporate Logistics</Link>
                     </li>
                     <li className="pb-5 hover:text-secondary">
                       <Link to="/overseas">Overseas Shipping</Link>
