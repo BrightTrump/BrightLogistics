@@ -9,6 +9,26 @@ export default {
         tertiary: "#4b5563",
         white: "#f8fafc",
       },
+
+      keyframes: {
+        wiggle: {
+          "0%": {
+            primary: "#030712",
+          },
+          "25%": {
+            secondary: "#6366f1",
+          },
+          "50%": {
+            tertiary: "#4b5563",
+          },
+          "75%": {
+            white: "#f8fafc",
+          },
+          "100%": {
+            white: "#f8fafc",
+          },
+        },
+      },
     },
   },
   plugins: [],

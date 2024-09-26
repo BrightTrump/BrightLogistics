@@ -13,8 +13,8 @@ export default function Home() {
       {/* Header Ends Here */}
 
       {/* Section-1 Starts Here */}
-      <section className="flex flex-col content-center items-center  bg-[url(https://odysseyuae.com/wp-content/uploads/2019/06/slider-2.jpg)] bg-cover h-svh  ">
-        <p className=" text-4xl text-center capitalize max-w-3xl pt-64">
+      <section className=" relative flex flex-col content-center items-center  bg-[url(https://odysseyuae.com/wp-content/uploads/2019/06/slider-2.jpg)] bg-cover h-svh  ">
+        <p className=" text-4xl text-center capitalize max-w-2xl pt-64">
           Provide Your Tracking ID To Track Your shipment progress.
         </p>
         <div className="flex justify-center mt-5">
@@ -42,30 +42,41 @@ export default function Home() {
       {/* Section-1 Ends Here */}
 
       {/* Section-2 Starts Here */}
-      <section className="section-1 px-24">
-        <div className="parent">
-          <div className="sub-parent waves" id="wave">
-            <p className="desc">Logistics Network</p>
-            <Link to="/aboutus" className="learn-cta ctas" id="cta">
-              Learn More <FaArrowRight className="learn-icon" />
+      <section className="mx-24 absolute bottom-[-17%] w-[90%] flex items-center ">
+        <div className="flex justify-between w-[90%]  items-center  ">
+          <div
+            className="bg-primary hover:bg-tertiary text-center w-[30%] p-[4em] border-2 border-gray-400 animate-pulse"
+            id="wave">
+            <p className="text-white font-bold pb-5">Air Freight</p>
+            <Link to="/airfreight" className="text-secondary text-[.8em]">
+              Read more
             </Link>
           </div>
-          <div className="sub-parent waves" id="wave">
-            <p className="desc">Dispersion</p>
-            <Link to="" className="learn-cta ctas" id="cta">
-              Learn More <FaArrowRight className="learn-icon" />
+
+          <div
+            className="bg-primary hover:bg-tertiary text-center w-[30%] p-[4em] border-2 border-gray-400 animate-pulse"
+            id="wave">
+            <p className="text-white font-bold pb-5">Ocean Freight</p>
+            <Link to="/oceanfreight" className="text-secondary text-[.8em]">
+              Read more
             </Link>
           </div>
-          <div className="sub-parent waves" id="wave">
-            <p className="desc">Fleet Express</p>
-            <Link to="" className="learn-cta ctas" id="cta">
-              Learn More <FaArrowRight className="learn-icon" />
+
+          <div
+            className="bg-primary hover:bg-tertiary text-center w-[30%] p-[4em] border-2 border-gray-400 animate-pulse"
+            id="wave">
+            <p className="text-white font-bold pb-5">Land Transport</p>
+            <Link to="/landtransport" className="text-secondary text-[.8em]">
+              Read more
             </Link>
           </div>
-          <div className="sub-parent waves" id="wave">
-            <p className="desc">Mobility</p>
-            <Link to="" className="learn-cta ctas" id="cta">
-              Learn More <FaArrowRight className="learn-icon" />
+
+          <div
+            className="bg-primary hover:bg-tertiary text-center w-[30%] p-[4em] border-2 border-gray-400 animate-pulse"
+            id="wave">
+            <p className="text-white font-bold pb-5">Mobility</p>
+            <Link to="" className="text-secondary text-[.8em]">
+              Read more
             </Link>
           </div>
         </div>
@@ -73,11 +84,11 @@ export default function Home() {
       {/* Section-2 Ends Here */}
 
       {/* Section-3 Starts Here */}
-      <section className="section-2 px-24">
-        <h3 className="sol">Our Offer</h3>
-        <div className="parent-div">
-          <div className="sub-parent">
-            <div className="img-div">
+      <section className="mx-24 mt-[12em]">
+        <h3 className="text-center font-bold text-4xl">Our Offer</h3>
+        <div className="">
+          <div className="">
+            <div className="">
               <img
                 src="../../assets/images/shipping6.jfif"
                 alt="A Picture is here"

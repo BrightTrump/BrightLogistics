@@ -44,7 +44,7 @@ export default function NavBar() {
 
   return (
     <div>
-      <div className="w-full bg-primary fixed top-0 ">
+      <div className="z-10 w-full bg-primary fixed top-0 ">
         <div className="w-[98%]  flex justify-between items-center mx-auto max-w-5xl text-white">
           <Link to="/" className="logo w-24 flex items-center">
             <img
@@ -84,26 +84,26 @@ export default function NavBar() {
                 </button>
                 {servicesDropdownVisible && (
                   <ul
-                    className=" mt-1 p-4 absolute bg-tertiary text-[1em] w-[20vw] h-[40vh] pointer"
+                    className=" mt-1 p-4 absolute bg-tertiary text-[1em] w-[20vw] h-[45vh] pointer"
                     onMouseOver={showServicesDropdown} //Keep dropdown open when hovering over the dropdown
                     onMouseOut={hideServicesDropdown} //Close dropdown when moving mouse out of dropdown services
                   >
-                    <li className="pb-3 hover:text-secondary ">
+                    <li className="pb-5 hover:text-secondary ">
                       <Link to="/domestic">Domestic Logistics</Link>
                     </li>
-                    <li className="pb-3 hover:text-secondary">
+                    <li className="pb-5 hover:text-secondary">
                       <Link to="/coperate">Coperate Logistics</Link>
                     </li>
-                    <li className="pb-3 hover:text-secondary">
+                    <li className="pb-5 hover:text-secondary">
                       <Link to="/overseas">Overseas Shipping</Link>
                     </li>
-                    <li className="pb-3  hover:text-secondary">
+                    <li className="pb-5  hover:text-secondary">
                       <Link to="/ecommerce">E-commerce Logistics</Link>
                     </li>
-                    <li className="pb-3  hover:text-secondary">
+                    <li className="pb-5  hover:text-secondary">
                       <Link to="/pet-transport">Pet Transport</Link>
                     </li>
-                    <li className="pb-3  hover:text-secondary">
+                    <li className="pb-5  hover:text-secondary">
                       <Link to="/separate-delivery">Separate Delivery</Link>
                     </li>
                   </ul>
@@ -123,17 +123,17 @@ export default function NavBar() {
                 </button>
                 {sModeDropdownVisible && (
                   <ul
-                    className="dropdown mt-1 p-4 absolute bg-tertiary text-[1em] w-[18vw] h-[20vh] pointer"
+                    className="dropdown mt-1 p-4 absolute bg-tertiary text-[1em] w-[18vw] h-[24vh] pointer"
                     onMouseOver={showSModeDropdown} //Keep dropdown open when hovering over the dropdown
                     onMouseOut={hideSModeDropdown} //Close dropdown when moving mouse out of dropdown
                   >
-                    <li className="pb-3 hover:text-secondary">
+                    <li className="pb-5 hover:text-secondary">
                       <Link to="/airfreight">Air Freight</Link>
                     </li>
-                    <li className="pb-3 hover:text-secondary">
+                    <li className="pb-5 hover:text-secondary">
                       <Link to="/oceanfrieght">Ocean Freight</Link>
                     </li>
-                    <li className="pb-3 hover:text-secondary">
+                    <li className="pb-5 hover:text-secondary">
                       <Link to="/land-transport">Land Transport</Link>
                     </li>
                   </ul>
