@@ -84,7 +84,7 @@ export default function Home() {
       {/* Section-2 Ends Here */}
 
       {/* Section-3 Starts Here */}
-      <section className="mx-24 mt-[12em]">
+      <section className="mx-24 mt-[10em]">
         <h3 className="text-center font-bold text-4xl pb-7">What We Offer</h3>
         <div className="flex justify-between flex-wrap w-[98%] h-[85vh]">
           <div className="relative">
@@ -97,7 +97,7 @@ export default function Home() {
             </div>
             <Link
               to="/landtransport"
-              className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-3 text-white">
+              className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-2 text-white">
               Domestic Logistics
             </Link>
           </div>
@@ -111,7 +111,7 @@ export default function Home() {
             </div>
             <Link
               to="/storage"
-              className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-3 text-white">
+              className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-2 text-white">
               Coporate Shipping
             </Link>
           </div>
@@ -125,7 +125,7 @@ export default function Home() {
             </div>
             <Link
               to="/airfreight"
-              className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-3 text-white">
+              className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-2 text-white">
               Overseas Shipping
             </Link>
           </div>
@@ -140,7 +140,7 @@ export default function Home() {
             </div>
             <Link
               to="/separatedelivery"
-              className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-3 text-white">
+              className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-2 text-white">
               E-commerce Logistics
             </Link>
           </div>
@@ -154,7 +154,7 @@ export default function Home() {
             </div>
             <Link
               to="/pettransport"
-              className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-3 text-white">
+              className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-2 text-white">
               Pet Transport
             </Link>
           </div>
@@ -168,7 +168,7 @@ export default function Home() {
             </div>
             <Link
               to="/oceanfrieght"
-              className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-3 text-white">
+              className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-2 text-white">
               Separate Delivery
             </Link>
           </div>
@@ -177,25 +177,25 @@ export default function Home() {
       {/* Section-3 Ends Here */}
 
       {/* Section-4 Starts Here */}
-      <section className="mt-16 pb-40 bg-black ">
-        <h3 className="text-center font-bold text-4xl text-white py-20">
+      <section className="mt-16 pb-36 bg-black ">
+        <h3 className="text-center font-bold text-4xl text-white pt-24 pb-12">
           Shipping Solutions
         </h3>
-        <div className="relative px-24  flex gap-9 ">
-          <div className="w-[95vw] h-[60vh]">
+        <div className="relative px-24 flex gap-9 ">
+          <div className="w-[95vw] h-[52vh]">
             <img
               src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hpcHBpbmd8ZW58MHx8MHx8fDA%3D"
               alt=""
               className="w-[100%] h-[100%]"
             />
-            <p className="absolute bottom-[0.9%] bg-primary text-white w-[39.9vw] ">
+            <p className="absolute bottom-[0.8%] bg-primary text-white w-[39.1vw] px-1 ">
               We've had the pleasure of experiencing the exceptional service
               provided by BrightLogistics in ocean transportation. We're excited
               to enhance our shipping collaboration with you all.
             </p>
           </div>
-          <div className="text-gray-300 max-w-[50%] text-justify text-[1.2em] leading-8">
-            <p className="desc">
+          <div className=" max-w-[50%] text-justify leading-7">
+            <p className="text-gray-500 text-[1em]">
               When time is of the essence, we excel in orchestrating accelerated
               services with guaranteed delivery timelines. Regardless of the
               intricacy of your logistical requirements, our skilled team and
@@ -203,31 +203,24 @@ export default function Home() {
               fulfillment of your obligations.
             </p>
 
-            <div className="icon-container">
-              <div className="icon-desc-div">
-                {/* <i className="bx bx-timer"></i> */}
-                <div className="desc-div">
-                  <h3 className="punctual">Punctual Delivery</h3>
-                  <p className="sub-desc">
-                    In addition to providing supply chain solutions, we have a
-                    team of specialized professionals catering to various
-                    industries. With the ever-changing demand and market
-                    dynamics, our proactive and adaptable teams ensure the
-                    provision of the flexible services you depend on.
-                  </p>
-                </div>
-              </div>
-              <div className="icon-desc-div">
-                {/* <i className="bx bx-phone-call"></i> */}
-                <div className="desc-div">
-                  <h3 className="punctual">
-                    Round-the-clock online assistance
-                  </h3>
-                  <p className="sub-desc">
-                    24/7 Customer Support System, available at all times
-                  </p>
-                </div>
-              </div>
+            <div className="py-3">
+              <h3 className="text-white text-[1.2em]">Punctual Delivery</h3>
+              <p className="text-gray-500 text-[1em]">
+                In addition to providing supply chain solutions, we have a team
+                of specialized professionals catering to various industries.
+                With the ever-changing demand and market dynamics, our proactive
+                and adaptable teams ensure the provision of the flexible
+                services you depend on.
+              </p>
+            </div>
+
+            <div className="">
+              <h3 className="text-white text-[1.2em]">
+                Round-the-clock online assistance
+              </h3>
+              <p className="text-gray-500 text-[1em]">
+                24/7 Customer Support System, available at all times
+              </p>
             </div>
           </div>
         </div>
@@ -235,29 +228,43 @@ export default function Home() {
       {/* Section-4 Ends Here */}
 
       {/* Section-5 Starts Here */}
-      <section className="section-4">
-        <div className="parent-div">
-          <div className="img-div">
-            <img
-              src="../../assets/images/shipping8.webp"
-              alt=""
-              className="warehouse-img"
-            />
+      <section className="">
+        <p className="px-24 pt-24 text-3xl max-w-[550px] pb-20">
+          We take the
+          <span className="text-secondary"> burden of logistics off you</span>
+        </p>
+        <div className="px-24 flex gap-9">
+          <div>
+            <h2 className="font-bold pb-6">Latest technology</h2>
+            <p>
+              Technology and its application are fundamental at BL. We
+              understand the role of technology in providing an exceptional
+              customer experience. For this reason, our processes, products and
+              services are built around modern technology to help us deliver
+              your shipments cheaper, safely and at the speed of light.
+            </p>
           </div>
-          <div className="sub-parent">
-            <p className="desc">
-              Our objective is to generate a positive impact on your business.
+          <div>
+            <h2 className="font-bold pb-6">Social Commerce</h2>
+            <p>
+              Pivotal to successful social commerce transactions is the ability
+              for the end-user to receive items where and when needed. With an
+              unmatched route network spanning urban and rural communalities,
+              GIGL is the solution to efficient last-mile delivery. As a
+              merchant, you only have to think about selling your products while
+              GIGL delivers to your customers worldwide.
             </p>
-            <p className="sub-desc">
-              Our foremost commitment is to guarantee the success of your
-              business via a streamlined and expedited delivery system. We
-              achieve your business's triumph through a responsive and swift
-              delivery approach.
+          </div>
+          <div>
+            <h2 className="font-bold pb-6">Guaranteed Delivery</h2>
+            <p>
+              We are conscious of the relationship between time and money and
+              utilize our resources optimally to meet your delivery needs. Our
+              service commitment to you is hassle-free delivery. We are large
+              enough to efficiently handle deliveries for large corporations yet
+              small enough to deploy innovative delivery solutions that help
+              small businesses.
             </p>
-
-            <Link to="#c4" className="parcel-cta">
-              Track Shipment <FaArrowRight className="fa-right-arrow" />
-            </Link>
           </div>
         </div>
       </section>
