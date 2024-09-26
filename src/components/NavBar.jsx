@@ -44,8 +44,8 @@ export default function NavBar() {
 
   return (
     <div>
-      <div className="w-full bg-primary fixed top-0">
-        <div className="w-[98%] px-24 flex justify-between items-center text-white">
+      <div className="w-full bg-primary fixed top-0 ">
+        <div className="w-[98%]  flex justify-between items-center mx-auto max-w-5xl text-white">
           <Link to="/" className="logo w-24 flex items-center">
             <img
               src="../../assets/images/logo.png"
@@ -56,7 +56,7 @@ export default function NavBar() {
           </Link>
           <FaBars className="mobile-menu hidden" id="mobile-cta" />
 
-          <nav className="navigation w-6/12 pointe">
+          <nav className="w-[55%] pointe">
             <img
               id="mobile-exit"
               className="mobile-menu-exit hidden"
@@ -64,120 +64,86 @@ export default function NavBar() {
               alt="Close Navigation"
             />
 
-            <ul className="primary-nav flex justify-between">
-              <li className="link current hover:text-secondary">
-                <Link to="/" className="links">
-                  Home
-                </Link>
+            <ul className="flex justify-between">
+              <li className="hover:text-secondary">
+                <Link to="/">Home</Link>
               </li>
-              <li className="link hover:text-secondary">
-                <Link to="/aboutus" className="links ">
+              <li className="hover:text-secondary">
+                <Link to="/aboutus" className=" ">
                   About Us
                 </Link>
               </li>
               <li
-                className="link linkdrop"
+                className="relative"
                 onMouseOver={showServicesDropdown}
                 onMouseOut={hideServicesDropdown}
                 onClick={!isMobile ? toggleServicesDropdown : null}>
-                <button className="links flex items-center hover:text-secondary">
+                <button className=" flex items-center hover:text-secondary">
                   Services
                   <FaCaretDown className="fa-caret-down" />
                 </button>
                 {servicesDropdownVisible && (
                   <ul
-                    className="dropdown mt-1 p-4 absolute bg-tertiary text-[1em] w-[20vw] h-[40vh] pointer"
-                    id="dropdown-ul"
+                    className=" mt-1 p-4 absolute bg-tertiary text-[1em] w-[20vw] h-[40vh] pointer"
                     onMouseOver={showServicesDropdown} //Keep dropdown open when hovering over the dropdown
                     onMouseOut={hideServicesDropdown} //Close dropdown when moving mouse out of dropdown services
                   >
-                    <li className="dropdown-link pb-3 hover:text-secondary ">
-                      <Link to="/domestic" className="links  ">
-                        Domestic Logistics
-                      </Link>
+                    <li className="pb-3 hover:text-secondary ">
+                      <Link to="/domestic">Domestic Logistics</Link>
                     </li>
-                    <li className="dropdown-link pb-3 hover:text-secondary">
-                      <Link to="/coperate" className="links ">
-                        Coperate Logistics
-                      </Link>
+                    <li className="pb-3 hover:text-secondary">
+                      <Link to="/coperate">Coperate Logistics</Link>
                     </li>
-                    <li className="dropdown-link pb-3 hover:text-secondary">
-                      <Link to="/overseas" className="links">
-                        Overseas Shipping
-                      </Link>
+                    <li className="pb-3 hover:text-secondary">
+                      <Link to="/overseas">Overseas Shipping</Link>
                     </li>
-                    <li className="dropdown-link pb-3">
-                      <Link
-                        to="/ecommerce"
-                        className="links hover:text-secondary">
-                        E-commerce Logistics
-                      </Link>
+                    <li className="pb-3  hover:text-secondary">
+                      <Link to="/ecommerce">E-commerce Logistics</Link>
                     </li>
-                    <li className="dropdown-link pb-3">
-                      <Link
-                        to="/pet-transport"
-                        className="links hover:text-secondary">
-                        Pet Transport
-                      </Link>
+                    <li className="pb-3  hover:text-secondary">
+                      <Link to="/pet-transport">Pet Transport</Link>
                     </li>
-                    <li className="dropdown-link pb-3">
-                      <Link
-                        to="/separate-delivery"
-                        className="links hover:text-secondary">
-                        Separate Delivery
-                      </Link>
+                    <li className="pb-3  hover:text-secondary">
+                      <Link to="/separate-delivery">Separate Delivery</Link>
                     </li>
                   </ul>
                 )}
               </li>
               <li className="link hover:text-secondary">
-                <Link to="/tracking" className="links">
-                  Tracking
-                </Link>
+                <Link to="/tracking">Tracking</Link>
               </li>
               <li
-                className="link linkdrop"
+                className="relative"
                 onMouseOver={showSModeDropdown}
                 onMouseOut={hideSModeDropdown}
                 onClick={!isMobile ? toggleSModeDropdown : null}>
-                <button className="links flex items-center hover:text-secondary">
+                <button className=" flex items-center hover:text-secondary">
                   S-Mode
                   <FaCaretDown className="fa-caret-down" />
                 </button>
                 {sModeDropdownVisible && (
                   <ul
                     className="dropdown mt-1 p-4 absolute bg-tertiary text-[1em] w-[18vw] h-[20vh] pointer"
-                    id="dropdown-ul"
                     onMouseOver={showSModeDropdown} //Keep dropdown open when hovering over the dropdown
                     onMouseOut={hideSModeDropdown} //Close dropdown when moving mouse out of dropdown
                   >
-                    <li className="dropdown-link pb-3 hover:text-secondary">
-                      <Link to="/airfreight" className="links">
-                        Air Freight
-                      </Link>
+                    <li className="pb-3 hover:text-secondary">
+                      <Link to="/airfreight">Air Freight</Link>
                     </li>
-                    <li className="dropdown-link pb-3 hover:text-secondary">
-                      <Link to="/oceanfrieght" className="links">
-                        Ocean Freight
-                      </Link>
+                    <li className="pb-3 hover:text-secondary">
+                      <Link to="/oceanfrieght">Ocean Freight</Link>
                     </li>
-                    <li className="dropdown-link pb-3 hover:text-secondary">
-                      <Link to="/land-transport" className="links">
-                        Land Transport
-                      </Link>
+                    <li className="pb-3 hover:text-secondary">
+                      <Link to="/land-transport">Land Transport</Link>
                     </li>
                   </ul>
                 )}
               </li>
               <li className="link hover:text-secondary">
-                <Link to="/faqs" className="links">
-                  Faqs
-                </Link>
+                <Link to="/faqs">Faqs</Link>
               </li>
               <li className="link hover:text-secondary">
-                <Link to="/contact" className="links">
-                  Contact Us
-                </Link>
+                <Link to="/contact">Contact Us</Link>
               </li>
             </ul>
 

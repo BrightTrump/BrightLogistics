@@ -13,11 +13,11 @@ export default function Home() {
       {/* Header Ends Here */}
 
       {/* Section-1 Starts Here */}
-      <div className="mt-20 px-24 content-center bg-[url(https://odysseyuae.com/wp-content/uploads/2019/06/slider-2.jpg)] bg-cover h-svh  ">
-        <p className="provide pt-8 text-5xl text-center capitalize">
+      <section className="flex flex-col content-center items-center  bg-[url(https://odysseyuae.com/wp-content/uploads/2019/06/slider-2.jpg)] bg-cover h-svh  ">
+        <p className=" text-4xl text-center capitalize max-w-3xl pt-64">
           Provide Your Tracking ID To Track Your shipment progress.
         </p>
-        <div className="input-track-div flex justify-center mt-5">
+        <div className="flex justify-center mt-5">
           <form method="post" action="" className="flex rounded-lg w-5/18">
             <input
               type="text"
@@ -25,12 +25,12 @@ export default function Home() {
               id="c4"
               placeholder="Enter Your Tracking ID"
               autoComplete="on"
-              className="tracking-box p-2 w-80 text-center"
+              className="p-2 w-80 text-center"
               required
             />
 
             <button
-              className="track-cta flex items-center bg-secondary text-white px-2 py-1 hover:bg-tertiary font-bold"
+              className="flex items-center bg-secondary text-white px-2 py-1 hover:bg-tertiary font-bold"
               type="submit"
               name="">
               Track Your Parcel
@@ -38,7 +38,7 @@ export default function Home() {
             </button>
           </form>
         </div>
-      </div>
+      </section>
       {/* Section-1 Ends Here */}
 
       {/* Section-2 Starts Here */}
@@ -70,9 +70,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Section-1 Ends Here */}
+      {/* Section-2 Ends Here */}
 
-      {/* Section-2 Starts Here */}
+      {/* Section-3 Starts Here */}
       <section className="section-2 px-24">
         <h3 className="sol">Our Offer</h3>
         <div className="parent-div">
