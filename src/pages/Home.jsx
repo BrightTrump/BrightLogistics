@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
-import { FaArrowRight, FaClock, FaMicrochip, FaSwatchbook } from "react-icons/fa6";
-
+import {
+  FaApple,
+  FaArrowRight,
+  FaClock,
+  FaGooglePay,
+  FaGooglePlay,
+  FaMicrochip,
+  FaSwatchbook,
+} from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -229,8 +236,8 @@ export default function Home() {
       {/* Section-4 Ends Here */}
 
       {/* Section-5 Starts Here */}
-      <section className="">
-        <p className="px-24 pt-24 text-3xl max-w-[550px] pb-20">
+      <section className="my-24">
+        <p className="px-24 text-3xl max-w-[550px] pb-20">
           We take the
           <span className="text-secondary"> burden of logistics off you</span>
         </p>
@@ -239,7 +246,7 @@ export default function Home() {
             <FaMicrochip className="text-black text-4xl" />
             <h2 className="font-bold py-6">Latest Technology</h2>
             <p>
-              Technology and its application are fundamental at BL. We
+              Technology and its application are fundamental at BLI. We
               understand the role of technology in providing an exceptional
               customer experience. For this reason, our processes, products and
               services are built around modern technology to help us deliver
@@ -253,9 +260,9 @@ export default function Home() {
               Pivotal to successful social commerce transactions is the ability
               for the end-user to receive items where and when needed. With an
               unmatched route network spanning urban and rural communalities,
-              GIGL is the solution to efficient last-mile delivery. As a
+              BLI is the solution to efficient last-mile delivery. As a
               merchant, you only have to think about selling your products while
-              GIGL delivers to your customers worldwide.
+              BL delivers to your customers worldwide.
             </p>
           </div>
           <div>
@@ -273,6 +280,43 @@ export default function Home() {
         </div>
       </section>
       {/* Section-5 Ends Here */}
+
+      {/* Section-6 Starts Here */}
+      <section className="mb-24  bg-black ">
+        <div className="flex gap-52 justify-items-end items-center px-24 pt-24 pb-24">
+          <div className="">
+            <p className=" text-3xl text-white max-w-[400px] pb-20">
+              BLI, the app for Local and International shipping
+            </p>
+
+            <div className="flex gap-4">
+              <div className="flex items-center gap-2 bg-primary p-2 rounded-md">
+                <FaApple className="text-white text-2xl" />
+                <p className="text-white text-[.9em] max-w-[125px] ">
+                  Download on the{" "}
+                  <span className="font-bold text-[1.3em]">App Store</span>
+                </p>
+              </div>
+              <div className="flex items-center gap-2 bg-white p-2 rounded-md">
+                <FaGooglePlay className="text-black text-2xl" />
+                <p className="text-black text-[.9em] max-w-[125px] ">
+                  Get it on{" "}
+                  <span className="font-bold text-[1.3em]">GooglePlay</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Image is here */}
+          <img
+            src="https://refurbiphones.ie/wp-content/uploads/2021/12/apple-iphone-13-black-unlocked-mobile-phone.png"
+            alt="A Phone Image"
+            className="w-[40%] rounded-[50%]"
+          />
+          {/* End of Image is here */}
+        </div>
+      </section>
+      {/* Section-6 Ends Here */}
     </div>
   );
 }
