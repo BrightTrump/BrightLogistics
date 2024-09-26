@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight, FaClock, FaMicrochip, FaSwatchbook } from "react-icons/fa6";
+
 
 export default function Home() {
   return (
@@ -216,7 +217,7 @@ export default function Home() {
 
             <div className="">
               <h3 className="text-white text-[1.2em]">
-                Round-the-clock online assistance
+                Round-the-clock Online Assistance
               </h3>
               <p className="text-gray-500 text-[1em]">
                 24/7 Customer Support System, available at all times
@@ -235,7 +236,8 @@ export default function Home() {
         </p>
         <div className="px-24 flex gap-9">
           <div>
-            <h2 className="font-bold pb-6">Latest technology</h2>
+            <FaMicrochip className="text-black text-4xl" />
+            <h2 className="font-bold py-6">Latest Technology</h2>
             <p>
               Technology and its application are fundamental at BL. We
               understand the role of technology in providing an exceptional
@@ -245,7 +247,8 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <h2 className="font-bold pb-6">Social Commerce</h2>
+            <FaSwatchbook className="text-black text-4xl" />
+            <h2 className="font-bold py-6">Social Commerce</h2>
             <p>
               Pivotal to successful social commerce transactions is the ability
               for the end-user to receive items where and when needed. With an
@@ -256,7 +259,8 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <h2 className="font-bold pb-6">Guaranteed Delivery</h2>
+            <FaClock className="text-black text-4xl" />
+            <h2 className="font-bold py-6">Guaranteed Delivery</h2>
             <p>
               We are conscious of the relationship between time and money and
               utilize our resources optimally to meet your delivery needs. Our

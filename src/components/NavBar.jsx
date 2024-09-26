@@ -84,7 +84,7 @@ export default function NavBar() {
                 </button>
                 {servicesDropdownVisible && (
                   <ul
-                    className=" mt-1 p-4 absolute bg-tertiary text-[1em] w-[20vw] h-[45vh] pointer"
+                    className=" mt-1 p-4 absolute bg-white text-black text-[1em] w-[20vw] h-[45vh] pointer"
                     onMouseOver={showServicesDropdown} //Keep dropdown open when hovering over the dropdown
                     onMouseOut={hideServicesDropdown} //Close dropdown when moving mouse out of dropdown services
                   >
@@ -123,7 +123,7 @@ export default function NavBar() {
                 </button>
                 {sModeDropdownVisible && (
                   <ul
-                    className="dropdown mt-1 p-4 absolute bg-tertiary text-[1em] w-[18vw] h-[24vh] pointer"
+                    className="dropdown mt-1 p-4 absolute bg-white text-black text-[1em] w-[18vw] h-[24vh] pointer"
                     onMouseOver={showSModeDropdown} //Keep dropdown open when hovering over the dropdown
                     onMouseOut={hideSModeDropdown} //Close dropdown when moving mouse out of dropdown
                   >
