@@ -4,22 +4,22 @@ export default {
   theme: {
     screens: {
       sm: "450px",
-      // => @media (min-width: 450px) 
+      // => @media (min-width: 450px)
 
       md: "768px",
-      // => @media (min-width: 768px) 
+      // => @media (min-width: 768px)
 
       lg: "1280px",
-      // => @media (min-width: 1280px) 
-      
+      // => @media (min-width: 1280px)
+
       xl: "1536px",
-      // => @media (min-width: 1536px) 
+      // => @media (min-width: 1536px)
     },
     extend: {
       colors: {
         primary: "#030712",
         secondary: "#6366f1",
-        tertiary: "#4b5563",
+        tertiary: "#9ca3af",
         white: "#f8fafc",
       },
 

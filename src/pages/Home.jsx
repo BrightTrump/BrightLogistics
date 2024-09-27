@@ -4,10 +4,12 @@ import NavBar from "../components/NavBar";
 import {
   FaApple,
   FaArrowRight,
+  FaBagShopping,
   FaClock,
-  FaGooglePay,
   FaGooglePlay,
+  FaHouse,
   FaMicrochip,
+  FaPeopleGroup,
   FaSwatchbook,
 } from "react-icons/fa6";
 
@@ -282,7 +284,7 @@ export default function Home() {
       {/* Section-5 Ends Here */}
 
       {/* Section-6 Starts Here */}
-      <section className="mb-24  bg-black ">
+      <section className="  bg-black ">
         <div className="flex gap-52 justify-items-end items-center px-24 pt-24 pb-24">
           <div className="">
             <p className=" text-3xl text-white max-w-[400px] pb-20">
@@ -317,6 +319,141 @@ export default function Home() {
         </div>
       </section>
       {/* Section-6 Ends Here */}
+
+      {/* Section-7 Starts Here */}
+      <section className=" ">
+        <h3 className="text-center font-bold text-3xl pt-24">
+          Logistic Solutions
+        </h3>
+        <div className="px-24 flex gap-[7em] py-20 ">
+          <div className="">
+            <p className="text-xl pb-4 text-tertiary">
+              The Information is Readily Apparent.
+            </p>
+
+            <div className="icon-container max-w-[550px]">
+              <div className="flex items-center pb-5 gap-4">
+                <FaBagShopping className="text-secondary text-3xl" />
+                <div className="desc-div">
+                  <h3 className="parcel">8706+ Parcel Delivered</h3>
+                  <p className="sub-desc">
+                    Swift and secure delivery, enhanced storage solution
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center pb-5 gap-4">
+                <FaPeopleGroup className="text-secondary text-[2.5em]" />
+                <div className="desc-div">
+                  <h3 className="parcel">3300+ Satisfied Clients</h3>
+                  <p className="sub-desc">
+                    Across the globe, we have contented customers who vouch for
+                    us through positive testimonials.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center pb-5 gap-4">
+                <FaHouse className="text-secondary text-4xl" />
+                <div className="desc-div">
+                  <h3 className="parcel">107+ Branches Accross</h3>
+                  <p className="sub-desc">
+                    The extensive network of our global branches facilitates
+                    seamless communication with you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Input Form Starts Here */}
+          <form action="">
+            <div className="form-content">
+              <p className="text-md font-bold pb-3">Get a Free Quote</p>
+              <div className="form-block">
+                <div className="pb-5">
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="Enter your fullname"
+                    className="text-[.9em] border-2  w-[30vw] p-1"
+                  />
+                  <br />
+                </div>
+                <div className="pb-5">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    autoComplete="on"
+                    className="text-[.9em] border-2  w-[30vw] p-1"
+                  />
+                </div>
+
+                <div className="pb-5">
+                  <input
+                    type="tel"
+                    id="tel"
+                    name="tel"
+                    placeholder="Enter your number"
+                    className="text-[.9em] border-2  w-[30vw] p-1"
+                  />
+                  <br />
+                </div>
+                <div className="pb-5">
+                  <textarea
+                    className="text-[.9em] border-2  w-[30vw] p-1"
+                    name="message"
+                    id="message"
+                    placeholder="Leave a message"
+                    rows={5}
+                    cols={4}
+                  />
+                </div>
+              </div>
+
+              <button className="bg-secondary p-1 w-[7vw] text-white font-bold hover:bg-primary">Submit</button>
+            </div>
+          </form>
+          {/* Input Form Ends Here */}
+        </div>
+      </section>
+      {/* Section-7 Ends Here */}
+
+      {/* Section-8 Starts Here Testimonial Section */}
+      <section className="bg-primary">
+        <p className="testimonials">Our Testimonials</p>
+
+        <div className="container">
+          <div className="content">
+            <p className="div-desc">
+              I rely solely on BrightLogistics for all of my shipping needs. My
+              customers have come to expect the outstanding shipping and
+              handling of their merchandise."
+            </p>
+            <h3 className="identity">Vicky Drane</h3>
+            <p className="ceo">HR, VK Communications</p>
+          </div>
+          <div className="content">
+            <p className="div-desc">
+              "I'd like to express my gratitude to you and your logistics team.
+              Over time, I've developed a strong sense of reliance on the
+              BrightLogistics team, especially during my end-of-the-day tasks."
+            </p>
+            <h3 className="identity">Anabella Mark</h3>
+            <p className="ceo">CEO, MkDev</p>
+          </div>
+          <div className="content">
+            <p className="div-desc">
+              "I exclusively rely on BrightLogistics for all my shipping
+              requirements. My customers have grown accustomed to the
+              exceptional shipping and handling of their goods."
+            </p>
+            <h3 className="identity">Magdalene Parks</h3>
+            <p className="ceo">GMD, ServOil</p>
+          </div>
+        </div>
+      </section>
+      {/* Section-8 Ends Here Testimonial Section */}
     </div>
   );
 }
