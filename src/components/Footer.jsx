@@ -75,7 +75,7 @@ export default function Footer() {
           <div className="text-white">
             <div className="col-1">
               <h3 className="font-bold text-[1.2em] pb-8">Company</h3>
-              <ul className="text-[1em]">
+              <ul className="text-[.8em]">
                 <li className="pb-3">
                   <Link className="hover:text-secondary" to="/">
                     Home
@@ -109,7 +109,7 @@ export default function Footer() {
           {/* Customers Assistance Links Starts Here */}
           <div className="text-white">
             <h3 className="font-bold text-[1.2em] pb-8">Services</h3>
-            <ul className="text-[1em]">
+            <ul className="text-[.8em]">
               <li className="pb-3">
                 <Link to="/domesticlogistics" className="hover:text-secondary">
                   Domestic Logistics
@@ -147,7 +147,7 @@ export default function Footer() {
           {/* Nexted Links Starts Here */}
           <div className="text-white">
             <h3 className="font-bold text-[1.2em] pb-8">Shipping Mode</h3>
-            <ul className="text-[1em]">
+            <ul className="text-[.8em]">
               <li className="pb-3">
                 <Link to="/airfreight" className="hover:text-secondary">
                   Air Freight
