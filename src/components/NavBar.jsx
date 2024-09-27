@@ -45,7 +45,7 @@ export default function NavBar() {
   return (
     <div>
       <div className="z-10 w-full bg-primary fixed top-0 ">
-        <div className="w-[98%]  flex justify-between items-center mx-auto max-w-5xl text-white">
+        <div className="w-[98%]  flex justify-between items-center mx-auto max-w-[87%] text-white">
           <Link to="/" className="logo w-24 flex items-center">
             <img
               src="../../assets/images/logo.png"

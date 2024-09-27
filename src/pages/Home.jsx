@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 import {
   FaApple,
   FaArrowRight,
@@ -374,7 +375,7 @@ export default function Home() {
                     id="fname"
                     name="fname"
                     placeholder="Enter your fullname"
-                    className="text-[.9em] border-2  w-[30vw] p-1"
+                    className="text-[.9em] border-2  w-[30vw] p-2"
                   />
                   <br />
                 </div>
@@ -385,7 +386,7 @@ export default function Home() {
                     name="email"
                     placeholder="Enter your email address"
                     autoComplete="on"
-                    className="text-[.9em] border-2  w-[30vw] p-1"
+                    className="text-[.9em] border-2  w-[30vw] p-2"
                   />
                 </div>
 
@@ -395,13 +396,13 @@ export default function Home() {
                     id="tel"
                     name="tel"
                     placeholder="Enter your number"
-                    className="text-[.9em] border-2  w-[30vw] p-1"
+                    className="text-[.9em] border-2  w-[30vw] p-2"
                   />
                   <br />
                 </div>
                 <div className="pb-5">
                   <textarea
-                    className="text-[.9em] border-2  w-[30vw] p-1"
+                    className="text-[.9em] border-2  w-[30vw] p-2"
                     name="message"
                     id="message"
                     placeholder="Leave a message"
@@ -411,7 +412,9 @@ export default function Home() {
                 </div>
               </div>
 
-              <button className="bg-secondary p-1 w-[7vw] text-white font-bold hover:bg-primary">Submit</button>
+              <button className="bg-secondary p-1 w-[7vw] text-white font-bold hover:bg-primary">
+                Submit
+              </button>
             </div>
           </form>
           {/* Input Form Ends Here */}
@@ -420,40 +423,63 @@ export default function Home() {
       {/* Section-7 Ends Here */}
 
       {/* Section-8 Starts Here Testimonial Section */}
-      <section className="bg-primary">
-        <p className="testimonials">Our Testimonials</p>
+      <section className="bg-tertiary">
+        <p className="text-white font-bold text-center py-24 text-3xl">
+          Our Testimonials
+        </p>
 
-        <div className="container">
-          <div className="content">
-            <p className="div-desc">
-              I rely solely on BrightLogistics for all of my shipping needs. My
+        <div className="px-24 flex justify-between w-[100%] pb-32">
+          <div className="relative bg-white px-3 rounded-md w-[33%]">
+            <img
+              src="https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM="
+              alt=""
+              className="absolute  top-[-12%] left-[34%] w-[30%] rounded-[50%]"
+            />
+
+            <p className="text-black pb-6 pt-20">
+              "I rely solely on BrightLogistics for all of my shipping needs. My
               customers have come to expect the outstanding shipping and
               handling of their merchandise."
             </p>
-            <h3 className="identity">Vicky Drane</h3>
-            <p className="ceo">HR, VK Communications</p>
+            <h3 className="font-bold text-[1.2em]">Peter Drane</h3>
+            <p className="text-secondary text-[.9em]">HR, VK Communications</p>
           </div>
-          <div className="content">
-            <p className="div-desc">
+          <div className="relative bg-white px-3 rounded-md w-[33%]">
+            <img
+              src="https://img.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg"
+              alt=""
+              className="absolute  top-[-12%] left-[34%] w-[30%] rounded-[50%]"
+            />
+
+            <p className="text-black pb-6 pt-20">
               "I'd like to express my gratitude to you and your logistics team.
               Over time, I've developed a strong sense of reliance on the
               BrightLogistics team, especially during my end-of-the-day tasks."
             </p>
-            <h3 className="identity">Anabella Mark</h3>
-            <p className="ceo">CEO, MkDev</p>
+            <h3 className="font-bold text-[1.2em]">Anabella Mark</h3>
+            <p className="text-secondary pb-2">CEO, MkDev</p>
           </div>
-          <div className="content">
-            <p className="div-desc">
-              "I exclusively rely on BrightLogistics for all my shipping
-              requirements. My customers have grown accustomed to the
-              exceptional shipping and handling of their goods."
+          <div className="relative bg-white px-3 rounded-md w-[33%]">
+            <img
+              src="https://i0.wp.com/media.premiumtimesng.com/wp-content/files/2024/03/image0-4.jpeg?fit=1032%2C688&ssl=1"
+              alt=""
+              className="absolute  top-[-12%] left-[34%] w-[30%] rounded-[50%]"
+            />
+            <p className="text-black pb-6 pt-20">
+              "I have never regretted my reliability on BrightLogistics for all
+              my shipping requirements. My customers have grown accustomed to
+              the exceptional shipping and handling of their goods."
             </p>
-            <h3 className="identity">Magdalene Parks</h3>
-            <p className="ceo">GMD, ServOil</p>
+            <h3 className="font-bold text-[1.2em]">Maxwell Parks</h3>
+            <p className="text-secondary pb-2">GMD, ServOil</p>
           </div>
         </div>
       </section>
       {/* Section-8 Ends Here Testimonial Section */}
+
+      {/* Footer Starts Here  */}
+      <Footer />
+      {/* Footer Ends Here  */}
     </div>
   );
 }
