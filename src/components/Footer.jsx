@@ -11,7 +11,7 @@ import {
 export default function Footer() {
   return (
     <div>
-      <footer className="bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXjz5V2Ja1v_2eKbu-YcuhPmcG47MdgSivEg&s)] bg-cover bg-no-repeat">
+      <footer className="bg-black bg-cover bg-no-repeat">
         <div className="px-24 pt-24 flex justify-between items-baseline w-[95%]">
           <div className="w-[30vw]">
             {/* Company Logo/Description Starts Here */}
@@ -73,9 +73,9 @@ export default function Footer() {
 
           {/* Company Links Starts Here */}
           <div className="text-white">
-            <div className="col-1">
+            <div className="">
               <h3 className="font-bold text-[1.2em] pb-8">Company</h3>
-              <ul className="text-[.8em]">
+              <ul className="text-[.8em] text-tertiary">
                 <li className="pb-3">
                   <Link className="hover:text-secondary" to="/">
                     Home
@@ -109,7 +109,7 @@ export default function Footer() {
           {/* Customers Assistance Links Starts Here */}
           <div className="text-white">
             <h3 className="font-bold text-[1.2em] pb-8">Services</h3>
-            <ul className="text-[.8em]">
+            <ul className="text-[.8em] text-tertiary">
               <li className="pb-3">
                 <Link to="/domesticlogistics" className="hover:text-secondary">
                   Domestic Logistics
@@ -147,7 +147,7 @@ export default function Footer() {
           {/* Nexted Links Starts Here */}
           <div className="text-white">
             <h3 className="font-bold text-[1.2em] pb-8">Shipping Mode</h3>
-            <ul className="text-[.8em]">
+            <ul className="text-[.8em] text-tertiary">
               <li className="pb-3">
                 <Link to="/airfreight" className="hover:text-secondary">
                   Air Freight
