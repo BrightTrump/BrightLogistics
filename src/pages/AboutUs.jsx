@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
-export default function AboutUs() {
+export default function AboutUs({ pageName, pageUrl }) {
   return (
     <div>
       {/* Header Starts Here */}
@@ -12,30 +12,88 @@ export default function AboutUs() {
       </header>
       {/* Header Ends Here */}
 
+      {/* Section 1 Starts Here */}
       <section>
-        <div className="bg-[url(https://assets.entrepreneur.com/content/3x2/2000/20151009045712-Logistics.jpeg)] bg-cover h-[45vh]">
-          <h2 className="font-bold text-3xl text-center pt-24 ">About US</h2>
-          <li>
-            <Link  to=""></Link>
-          </li>
+        <div className="bg-[url(https://compasstutors.com.ng/wp-content/uploads/2017/08/about-us.jpg)] bg-cover h-[65vh]">
+          {/* <Link to="/" className="text-center text-black pt-40">
+              Home
+            </Link> */}
         </div>
       </section>
+      {/* Section 1 Ends Here */}
 
-      {/* Section-1 Starts Here */}
-      <section className="px-24 ">
-        <p className="abt-desc">
-          <span>Welcome to EliteSwiftShip –</span> Your Reliable Ally for
-          Efficient Deliveries - Embracing the belief that each parcel carries
-          more than mere objects; it encapsulates emotions, connections, and
-          commitments. Fueled by our unwavering commitment to exceed
-          expectations, we have emerged as a steadfast symbol of trust in the
-          realm of courier services.
-        </p>
-        <div className="container">
-          <div className="content">
-            <h3 className="story">Our Story</h3>
-            <p className="description">
-              EliteSwiftShip originated as a modest endeavor fueled by a
+      {/* Section 2 Starts Here */}
+      <section className="px-24 pb-28">
+        <h2 className="text-center text-3xl font-bold py-20">Who We Are</h2>
+        <div className="flex gap-8 pb-[4em]">
+          <div className="w-[85vw] h-[40vh]">
+            <img src="../assets/images/shipping8.webp" alt="" className="" />
+            <img
+              src="../assets/images/shipping6.jfif"
+              alt=""
+              className="pt-4"
+            />
+          </div>
+          <div className="max-w-[550px]">
+            <p className="pb-3">
+              <span className="text-secondary text-[1.2em] font-bold">
+                Welcome to BrightLogistics –
+              </span>{" "}
+              BL is Africa’s leading homegrown logistics company, driven by
+              technology and designed to meet the needs of e-commerce and social
+              commerce.
+            </p>
+            <p className="pb-3">
+              Founded in 2023 with a clear mission: to remove the traditional
+              barriers in last-mile delivery and create a seamless logistics
+              experience for businesses and individuals. We understood from the
+              start that the success of e-commerce and social commerce relies
+              heavily on efficient logistics, and we have remained committed to
+              that vision ever since.
+            </p>
+            <p className="pb-3">
+              From our very first shipment in 2023, BL has expanded rapidly,
+              linking African vendors with global buyers through our streamlined
+              overseas shipping services across multiple continents.
+            </p>
+            <p className="pb-3">
+              At BL, every step of the process—from packaging and handling to
+              final delivery—is treated with care and precision. Our agility,
+              dedication to service excellence, and data-driven approach allow
+              us to tackle key logistics challenges with lasting solutions. We
+              also uphold strong ethical standards, maintaining our corporate,
+              environmental, and social responsibilities.
+            </p>
+            <p className="pb-3">
+              At BL, every step of the process—from packaging and handling to
+              final delivery—is treated with care and precision. Our agility,
+              dedication to service excellence, and data-driven approach allow
+              us to tackle key logistics challenges with lasting solutions. We
+              also uphold strong ethical standards, maintaining our corporate,
+              environmental, and social responsibilities.
+            </p>
+            <p className="pb-3">
+              With an in-depth knowledge of the local landscape, BL consistently
+              delivers outstanding results. Hundreds of thousands of verified
+              users, including top businesses and ecosystem partners, trust us
+              to manage their shipments safely and efficiently, both within
+              Africa and internationally. We are always seeking innovative ways
+              to close the gap between e-commerce, social commerce, and
+              logistics. BL has a robust presence across Nigeria and operates in
+              Ghana, along with other locations across three continents. We are
+              shaping the future of logistics, today.
+            </p>
+          </div>
+        </div>
+
+        {/* Purpose Statement Starts Here */}
+        <div className="w-[100%] flex justify-between">
+          <div className="w-[33%] bg-secondary p-4 rounded-md">
+            <h3 className="py-3 text-[1.2em] font-bold text-white">
+              Our Story
+            </h3>
+            <p className="text-gray-300">
+              BrightLogistics originated as a modest endeavor fueled by a
               collective dedication to delivering excellence. What initially
               commenced as a grassroots project has since blossomed into a
               prominent presence within the courier industry nationwide. Our
@@ -44,104 +102,98 @@ export default function AboutUs() {
               integrity.
             </p>
           </div>
-          <div className="content">
-            <h3 className="story">Our Mission</h3>
-            <p className="description">
-              Our purpose is straightforward yet deeply meaningful: forging
-              connections between individuals and enterprises through the
-              provision of trust, dependability, and a sense of security. We
-              recognize the importance of every shipment, whether it encompasses
-              a cherished gift, a vital corporate document, or an eagerly
-              anticipated online purchase. In every parcel we manage, we remain
-              unwaveringly devoted to our pledge of precision, safety, and
-              punctuality.
+          <div className="w-[33%] bg-secondary p-4 rounded-md">
+            <h3 className="py-3 text-[1.2em] font-bold text-white">
+              Our Vsion
+            </h3>
+            <p className="pb-3 text-gray-300">
+              To be Africa’s leading e-commerce logistics platform.
+            </p>
+            <h3 className="pb-3 text-[1.2em] font-bold text-white">
+              Our Mission
+            </h3>
+            <p className="text-gray-300">
+              We are committed to relentlessly exceeding customer expectations
+              through innovative technology solutions for logistics.
             </p>
           </div>
-          <div className="content">
-            <h3 className="story">Our Promise</h3>
-            <p className="description">
-              At EliteSwiftShip, our mission extends beyond mere package
-              delivery; we deliver a sense of trust. We recognize that behind
-              each parcel lies a unique narrative, and we take great pride in
-              being entrusted with its voyage. Our unwavering dedication to
-              excellence and customer contentment drives us to consistently
-              surpass your expectations with every shipment.
-            </p>
-          </div>
-        </div>
-      </section>
-      {/* Section-1 Ends Here */}
-
-      {/* Section-2 Starts Here */}
-      <section className="px-24">
-        <div className="parent">
-          <div className="img-div">
-            <img src="images/shipping6.jfif" alt="" className="imgs" />
-          </div>
-          <div className="sub-parent">
-            <h3 className="choose">What Makes EliteSwiftShip the Ideal Choice?</h3>
-            <p className="desc">
-              A. Dependable Delivery: Our proven history tells the story. We
-              take great pride in our flawless delivery performance,
-              guaranteeing the safe and punctual arrival of your packages at
-              their intended destinations.
-            </p>
-            <p className="desc">
-              B. Community Commitment: Our mission extends beyond package
-              delivery; we actively engage with and support the communities we
-              serve. Through a range of initiatives, our goal is to create a
-              positive and meaningful impact on society.
-            </p>
-            <p className="desc">
-              C. Tailored Assistance: Building Connections is Our Philosophy Our
-              committed team is available to support you throughout your
-              journey, guaranteeing that your distinct requirements receive the
-              individualized care they deserve.
-            </p>
-            <p className="desc">
-              D. Sustainability: Embracing our role as custodians of the
-              environment, we pledge to reduce our carbon footprint. Our
-              eco-conscious initiatives exemplify our unwavering commitment to a
-              more sustainable future.
-            </p>
-            <p className="desc">
-              E. Innovative Technology Integration: Our commitment to
-              technological advancement has been fundamental to our
-              achievements. Our cutting-edge tracking systems and streamlined
-              logistics solutions provide you with immediate, actionable
-              insights into your shipments.
+          <div className="w-[33%] bg-secondary p-4 rounded-md">
+            <h3 className="py-3 text-[1.2em] font-bold text-white">
+              Our Promise
+            </h3>
+            <p className="text-gray-300">
+              At BrightLogistics, we deliver a sense of trust. We recognize that
+              behind each parcel lies a unique narrative, and we take great
+              pride in being entrusted with its voyage. Our unwavering
+              dedication to excellence and customer contentment drives us to
+              consistently surpass your expectations with every shipment.
             </p>
           </div>
         </div>
+        {/* Purpose Statement Ends Here */}
       </section>
       {/* Section-2 Ends Here */}
 
       {/* Section-3 Starts Here */}
-      <section className="px-24 ">
-        <h3 className="join">Come Along on Our Adventure</h3>
-        <div className="parent">
-          <div className="img-div">
-            <img src="images/shipping8.webp" alt="" className="imgs" />
+      <section className="px-24 py-16 bg-tertiary">
+        <div className="flex justify-between w-[100%]">
+          {/* Description One Starts Here */}
+          <div className="w-[49%]">
+            <h3 className="text-[1.3em] font-bold pb-6">
+              What Makes BrightLogistics the Ideal Choice?
+            </h3>
+            <p className="pb-2">
+              A. Dependable Delivery: Our track record speaks for itself. We
+              ensure safe, on-time delivery of your packages with pride and
+              precision.
+            </p>
+            <p className="pb-2">
+              B. Community Commitment: Our mission extends beyond delivery; we
+              strive to positively impact the communities we serve through
+              various initiatives.
+            </p>
+            <p className="pb-2">
+              C. Tailored Assistance: Our philosophy is building connections.
+              Our dedicated team supports you every step, ensuring personalized
+              attention to your unique needs.
+            </p>
+            <p className="pb-2">
+              D. Sustainability: As environmental stewards, we pledge to reduce
+              our carbon footprint and commit to a sustainable future through
+              eco-conscious initiatives.
+            </p>
+            <p className="">
+              E. Innovative Technology Integration: Our commitment to technology
+              powers our success, providing real-time insights through advanced
+              tracking and streamlined logistics.
+            </p>
           </div>
-          <div className="sub-parent">
-            <p className="desc">
-              We appreciate your interest in choosing
-              <span>EliteSwiftShip</span> for all your delivery requirements.
+          {/* Description One Ends Here */}
+
+          {/* Description Two Starts Here */}
+          <div className="w-[49%]">
+            <h3 className="text-[1.3em] font-bold pb-6">
+              Come Along on Our Adventure
+            </h3>
+            <p className="pb-10">
+              We appreciate your interest in choosing{" "}
+              <span>BrightLogistics</span> for all your delivery requirements.
               Whether you're an individual sending a special gift or a business
               looking to broaden its horizons, we are dedicated to offering you
               dependable, secure, and hassle-free courier services. Take a
               moment to explore our range of services, effortlessly track your
               packages, and discover the unique advantages of partnering with
-              EliteSwiftShip.
+              BrightLogistics.
             </p>
 
-            <a href="contact.php" className="cont-us">
+            <Link to="/contactus" className="bg-secondary text-white rounded-md font-bold p-2 hover:bg-primary">
               Contact Us
-            </a>
+            </Link>
           </div>
+          {/* Description Two Ends Here */}
         </div>
       </section>
-      {/* Section-2 Ends Here */}
+      {/* Section-3 Ends Here */}
 
       {/* Footer Starts Here  */}
       <Footer />
