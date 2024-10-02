@@ -12,8 +12,6 @@ import {
 } from "react-icons/fa6";
 
 export default function DomesticLogistics() {
-  const pageName = "Home";
-  const pageUrl = "/";
   return (
     <div>
       {/* Header Starts Here */}
@@ -25,7 +23,9 @@ export default function DomesticLogistics() {
       {/* Section 1 Starts Here */}
       <section>
         <div className="bg-[url(https://www.guruanjaneyaalogistics.com/image/slide2.jpg)] bg-cover h-[77vh] text-center">
-          <h2 className="text-3xl text-tertiary font-bold pt-[8em]">Domestic Logistics</h2>
+          <h2 className="text-3xl text-secondary font-bold pt-[8em]">
+            Domestic Logistics
+          </h2>
         </div>
       </section>
       {/* Section 1 Ends Here */}
@@ -37,7 +37,7 @@ export default function DomesticLogistics() {
             <img
               src="../../assets/images/shipping11.png"
               alt=""
-              className="w-[55vw] h-[52vh] rounded-xl shadow-2xl shadow-gray-800"
+              className="w-[50vw] h-[58vh] rounded-xl shadow-2xl shadow-gray-800"
             />
           </div>
           <div className="max-w-[550px]">
@@ -49,7 +49,7 @@ export default function DomesticLogistics() {
             </p>
             <p className="pb-3">
               We offer a range of delivery options at unbeatable rates. Whether
-              sending parcels within your city or across states, GIG Logistics
+              sending parcels within your city or across states, BLI Logistics
               provides affordable courier services to all 36 states, including
               the FCT. Plus, our Same Day Delivery comes with the lowest prices
               nationwide!
@@ -61,17 +61,16 @@ export default function DomesticLogistics() {
               best solutions for you.
             </p>
             <p className="pb-3">
-              Experience seamless domestic shipping services with GIG Logistics
+              Experience seamless domestic shipping services with BLI Logistics
               today.
             </p>
 
             <div className="pt-6 flex gap-4">
-              <button
-                type="button"
-                onClick={alert}
+              <Link
+                to="/signup"
                 className="py-1 px-2 rounded-md bg-primary text-white font-bold hover:bg-white hover:text-secondary hover:font-bold">
                 Ship Now
-              </button>
+              </Link>
               <Link
                 to="/getquote"
                 className="py-1 px-2 rounded-md bg-secondary text-white font-bold hover:bg-tertiary hover:text-white hover:font-bold">
@@ -110,11 +109,12 @@ export default function DomesticLogistics() {
               fast-track the shipment of your items using the BLI App.
             </p>
           </div>
+
           <div className="w-[30%]">
             <FaPeopleGroup className=" text-4xl" />
             <h2 className="font-bold py-6 text-secondary">BLI Partners</h2>
             <p>
-              At GIG Logistics, we are committed to creating opportunities for
+              At BLI Logistics, we are committed to creating opportunities for
               wealth distribution. Through this partnership, you can earn
               substantial income on the side. Our primary requirements are a
               functional vehicle, fit for purpose, and a qualified rider. We

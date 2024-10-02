@@ -295,17 +295,23 @@ export default function Home() {
             <div className="flex gap-4">
               <div className="flex items-center gap-2 bg-primary p-2 rounded-md">
                 <FaApple className="text-white text-2xl" />
-                <p className="text-white text-[.9em] max-w-[125px] ">
+                <Link
+                  to="https://apps.apple.com/us/app/"
+                  target="_blank"
+                  className="text-white text-[.9em] max-w-[125px] ">
                   Download on the{" "}
                   <span className="font-bold text-[1.3em]">App Store</span>
-                </p>
+                </Link>
               </div>
               <div className="flex items-center gap-2 bg-white p-2 rounded-md">
                 <FaGooglePlay className="text-black text-2xl" />
-                <p className="text-black text-[.9em] max-w-[125px] ">
+                <Link
+                  to="https://play.google.com/store/apps/"
+                  target="_blank"
+                  className="text-black text-[.9em] max-w-[125px] ">
                   Get it on{" "}
                   <span className="font-bold text-[1.3em]">GooglePlay</span>
-                </p>
+                </Link>
               </div>
             </div>
           </div>

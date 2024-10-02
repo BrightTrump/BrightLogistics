@@ -45,18 +45,18 @@ export default function NavBar() {
   return (
     <div>
       <div className="z-10 w-full bg-primary fixed top-0 ">
-        <div className="w-[98%]  flex justify-between items-center mx-auto max-w-[87%] text-white">
-          <Link to="/" className="logo w-24 flex items-center">
+        <div className="w-[98%] h-[12vh]  flex justify-between items-center mx-auto max-w-[87%] text-white">
+          <Link to="/" className="logo w-16 flex items-center">
             <img
               src="../../assets/images/logo.png"
               alt="Company Logo"
               className="w-full "
             />
-            <p className="text-3xl text-secondary">BrightLogistics</p>
+            <p className="text-2xl text-secondary">BrightLogistics</p>
           </Link>
           <FaBars className="mobile-menu hidden" id="mobile-cta" />
 
-          <nav className="w-[55%] pointe">
+          <nav className="w-[60%] pointer flex justify-between items-center">
             <img
               id="mobile-exit"
               className="mobile-menu-exit hidden"
@@ -64,7 +64,7 @@ export default function NavBar() {
               alt="Close Navigation"
             />
 
-            <ul className="flex justify-between">
+            <ul className="flex justify-between w-[85%]">
               <li className="hover:text-secondary">
                 <Link to="/">Home</Link>
               </li>
@@ -92,19 +92,19 @@ export default function NavBar() {
                       <Link to="/domesticlogistics">Domestic Logistics</Link>
                     </li>
                     <li className="pb-5 hover:text-secondary">
-                      <Link to="/coperate">Coporate Logistics</Link>
+                      <Link to="/coporatelogistics">Coporate Logistics</Link>
                     </li>
                     <li className="pb-5 hover:text-secondary">
-                      <Link to="/overseas">Overseas Shipping</Link>
+                      <Link to="/overseasshipping">Overseas Shipping</Link>
                     </li>
                     <li className="pb-5  hover:text-secondary">
-                      <Link to="/ecommerce">E-commerce Logistics</Link>
+                      <Link to="/ecommercelogistics">E-commerce Logistics</Link>
                     </li>
                     <li className="pb-5  hover:text-secondary">
-                      <Link to="/pet-transport">Pet Transport</Link>
+                      <Link to="/pettransport">Pet Transport</Link>
                     </li>
                     <li className="pb-5  hover:text-secondary">
-                      <Link to="/separate-delivery">Separate Delivery</Link>
+                      <Link to="/walletaddedservices">Wallet and Added Services</Link>
                     </li>
                   </ul>
                 )}
@@ -147,13 +147,15 @@ export default function NavBar() {
               </li>
             </ul>
 
-            {/* <ul className="secondary-nav">
-              <li className="login">
-                <Link to="/tracking" className="login-cta">
-                  Track Parcel
+            <ul className="">
+              <li className="">
+                <Link
+                  to="/signin"
+                  className="bg-secondary p-3 w-[20%] font-bold rounded-md hover:bg-tertiary">
+                  Sign In
                 </Link>
               </li>
-            </ul> */}
+            </ul>
           </nav>
         </div>
       </div>

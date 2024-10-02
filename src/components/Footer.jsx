@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  FaArrowRight,
   FaFacebook,
   FaInstagram,
   FaLinkedin,
@@ -16,7 +15,7 @@ export default function Footer() {
           <div className="w-[30vw]">
             {/* Company Logo/Description Starts Here */}
             <img
-              className="w-[7vw]"
+              className="w-[5vw]"
               src="../assets/images/logo.png"
               alt="Company Logo"
             />
@@ -64,7 +63,7 @@ export default function Footer() {
               <Link
                 to="mailto:support@brightlogistics.com"
                 target="_blank"
-                className="text-white hover:text-secondary">
+                className="text-secondary hover:text-tertiary">
                 support@brightlogistics.com
               </Link>
             </div>
@@ -92,12 +91,12 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li className="pb-3">
-                  <Link to="/faqs" className="hover:text-secondary" >
+                  <Link to="/faqs" className="hover:text-secondary">
                     Faqs
                   </Link>
                 </li>
                 <li className="pb-3">
-                  <Link to="/contactus" className="hover:text-secondary" >
+                  <Link to="/contactus" className="hover:text-secondary">
                     Contact Us
                   </Link>
                 </li>
@@ -121,8 +120,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="pb-3">
-                <Link to="overseashipping" className="hover:text-secondary">
-                  Oversea Shipping
+                <Link to="overseasshipping" className="hover:text-secondary">
+                  Overseas Shipping
                 </Link>
               </li>
               <li className="pb-3">
@@ -136,8 +135,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="pb-3">
-                <Link to="separatedelivery" className="hover:text-secondary">
-                  Separate Delivery
+                <Link to="/walletaddedservices" className="hover:text-secondary">
+                  Wallet and Added Services
                 </Link>
               </li>
             </ul>

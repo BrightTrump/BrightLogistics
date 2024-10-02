@@ -134,7 +134,7 @@ export default function AboutUs() {
       {/* Section-2 Ends Here */}
 
       {/* Section-3 Starts Here */}
-      <section className="px-24 py-16 bg-tertiary">
+      <section className="px-24 pt-10 pb-20">
         <div className="flex justify-between w-[100%]">
           {/* Description One Starts Here */}
           <div className="w-[49%]">
