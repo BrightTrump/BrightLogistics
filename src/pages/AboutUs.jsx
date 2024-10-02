@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
-export default function AboutUs({ pageName, pageUrl }) {
+export default function AboutUs() {
+    
   return (
     <div>
       {/* Header Starts Here */}
@@ -15,9 +16,7 @@ export default function AboutUs({ pageName, pageUrl }) {
       {/* Section 1 Starts Here */}
       <section>
         <div className="bg-[url(https://compasstutors.com.ng/wp-content/uploads/2017/08/about-us.jpg)] bg-cover h-[65vh]">
-          {/* <Link to="/" className="text-center text-black pt-40">
-              Home
-            </Link> */}
+        
         </div>
       </section>
       {/* Section 1 Ends Here */}

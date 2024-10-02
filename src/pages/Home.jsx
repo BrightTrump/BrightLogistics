@@ -107,7 +107,7 @@ export default function Home() {
               />
             </div>
             <Link
-              to="/landtransport"
+              to="/domesticlogistics"
               className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-2 text-white">
               Domestic Logistics
             </Link>
@@ -121,21 +121,21 @@ export default function Home() {
               />
             </div>
             <Link
-              to="/storage"
+              to="/coporatelogistics"
               className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-2 text-white">
-              Coporate Shipping
+              Coporate Logistics
             </Link>
           </div>
           <div className="relative">
             <div className="w-[27vw] h-[40vh]">
               <img
-                src="../../assets/images/shipping7.webp"
+                src="https://wefreight.com/wp-content/uploads/2024/07/loading-cargo-plane-airport-generative-ai-illustration-1_11zon.jpg"
                 alt=""
                 className="w-[100%] h-[100%]"
               />
             </div>
             <Link
-              to="/airfreight"
+              to="/overseasshipping"
               className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-2 text-white">
               Overseas Shipping
             </Link>
@@ -150,7 +150,7 @@ export default function Home() {
               />
             </div>
             <Link
-              to="/separatedelivery"
+              to="/ecommercelogistics"
               className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-2 text-white">
               E-commerce Logistics
             </Link>
@@ -178,7 +178,7 @@ export default function Home() {
               />
             </div>
             <Link
-              to="/oceanfrieght"
+              to="/separatedelivery"
               className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-2 text-white">
               Separate Delivery
             </Link>
@@ -199,7 +199,7 @@ export default function Home() {
               alt=""
               className="w-[100%] h-[100%]"
             />
-            <p className="absolute bottom-[0.8%] bg-primary text-white w-[39.1vw] px-1 ">
+            <p className="absolute bottom-[-0.1%] bg-primary text-white w-[39.1vw] px-1 ">
               We've had the pleasure of experiencing the exceptional service
               provided by BrightLogistics in ocean transportation. We're excited
               to enhance our shipping collaboration with you all.

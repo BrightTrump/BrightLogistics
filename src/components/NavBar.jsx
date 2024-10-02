@@ -89,7 +89,7 @@ export default function NavBar() {
                     onMouseOut={hideServicesDropdown} //Close dropdown when moving mouse out of dropdown services
                   >
                     <li className="pb-5 hover:text-secondary ">
-                      <Link to="/domestic">Domestic Logistics</Link>
+                      <Link to="/domesticlogistics">Domestic Logistics</Link>
                     </li>
                     <li className="pb-5 hover:text-secondary">
                       <Link to="/coperate">Coporate Logistics</Link>
