@@ -24,8 +24,8 @@ export default function CoporateLogistics() {
 
       {/* Section 1 Starts Here */}
       <section>
-        <div className="bg-[url(https://afplus.com/wp-content/uploads/2023/02/The-Basics-of-Logistics-for-Corporate-Events.jpg)] bg-cover h-[77vh] text-center">
-          <h2 className="text-3xl text-secondary font-bold pt-[8em]">
+        <div className="bg-[url(../assets/images/coporate.webp)] bg-cover h-[77vh] text-center">
+          <h2 className="text-xl text-secondary font-bold pt-[12em]">
             Coporate Logistics
           </h2>
         </div>
@@ -34,10 +34,10 @@ export default function CoporateLogistics() {
 
       {/* Section 2 Starts Here */}
       <section className="px-24 py-24">
-        <div className="flex gap-8 pb-[4em]">
+        <div className="flex gap-8 items-center pb-[4em]">
           <div>
             <img
-              src="../assets/images/shipping8.webp"
+              src="https://afplus.com/wp-content/uploads/2023/02/The-Basics-of-Logistics-for-Corporate-Events.jpg"
               alt=""
               className="w-[50vw] h-[60vh] rounded-xl shadow-2xl shadow-gray-800"
             />

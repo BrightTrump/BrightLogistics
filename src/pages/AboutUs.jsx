@@ -26,9 +26,9 @@ export default function AboutUs() {
         <h2 className="text-center text-3xl font-bold py-20">Who We Are</h2>
         <div className="flex gap-8 pb-[4em]">
           <div className="w-[85vw] h-[40vh]">
-            <img src="../assets/images/shipping8.webp" alt="" className="" />
+            <img src="../assets/images/coporate.webp" alt="" className="" />
             <img
-              src="../assets/images/shipping6.jfif"
+              src="../assets/images/aboutus.avif"
               alt=""
               className="pt-4"
             />

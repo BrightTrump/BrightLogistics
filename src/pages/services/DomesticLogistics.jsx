@@ -23,7 +23,7 @@ export default function DomesticLogistics() {
       {/* Section 1 Starts Here */}
       <section>
         <div className="bg-[url(https://www.guruanjaneyaalogistics.com/image/slide2.jpg)] bg-cover h-[77vh] text-center">
-          <h2 className="text-3xl text-secondary font-bold pt-[8em]">
+          <h2 className="text-xl text-secondary font-bold pt-[12em]">
             Domestic Logistics
           </h2>
         </div>
@@ -32,10 +32,10 @@ export default function DomesticLogistics() {
 
       {/* Section 2 Starts Here */}
       <section className="px-24 py-24">
-        <div className="flex gap-8 pb-[4em]">
+        <div className="flex gap-8 items-center pb-[4em]">
           <div>
             <img
-              src="../../assets/images/shipping11.png"
+              src="../../assets/images/domestic.png"
               alt=""
               className="w-[50vw] h-[58vh] rounded-xl shadow-2xl shadow-gray-800"
             />

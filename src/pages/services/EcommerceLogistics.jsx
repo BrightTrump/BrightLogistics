@@ -25,7 +25,7 @@ export default function EcommerceLogistics() {
       {/* Section 1 Starts Here */}
       <section>
         <div className="bg-[url(https://mecaluxcom.cdnwm.com/documents/20128/519873/M27P12+e-logistica.jpg/171a2817-d0bd-7906-e64a-4a11f70c6085?t=1668587884668&e=jpg)] bg-cover h-[77vh] text-center">
-          <h2 className="text-3xl text-secondary font-bold pt-[8em]">
+          <h2 className="text-xl text-secondary font-bold pt-[12em]">
             Ecommerce Logistics
           </h2>
         </div>
@@ -34,10 +34,10 @@ export default function EcommerceLogistics() {
 
       {/* Section 2 Starts Here */}
       <section className="px-24 py-24">
-        <div className="flex gap-8 pb-[4em]">
+        <div className="flex gap-8 items-center pb-[4em]">
           <div>
             <img
-              src="../../assets/images/shipping12.jpg"
+              src="../../assets/images/ecommerce.jpg"
               alt=""
               className="w-[50vw] h-[60vh] rounded-xl shadow-2xl shadow-gray-800"
             />

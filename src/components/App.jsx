@@ -5,14 +5,22 @@ import DomesticLogistics from "../pages/services/Domesticlogistics";
 import CoporateLogistics from "../pages/services/CoporateLogistics";
 import OverseasShipping from "../pages/services/OverseasShipping";
 import EcommerceLogistics from "../pages/services/EcommerceLogistics";
+import PetTransport from "./../pages/services/PetTransport";
 import WalletAddedServices from "../pages/services/WalletAddedServices";
+import AirFreight from "./../pages/shippingmode/AirFreight";
 
 function App() {
   return (
     <>
       <Switch>
-        <Route path="/walletaddedservices" component={WalletAddedServices}></Route>
-        <Route path="/ecommercelogistics" component={EcommerceLogistics}></Route>
+        <Route path="/airfreight" component={AirFreight}></Route>
+        <Route
+          path="/walletaddedservices"
+          component={WalletAddedServices}></Route>
+        <Route path="/pettransport" component={PetTransport}></Route>
+        <Route
+          path="/ecommercelogistics"
+          component={EcommerceLogistics}></Route>
         <Route path="/overseasshipping" component={OverseasShipping}></Route>
         <Route path="/coporatelogistics" component={CoporateLogistics}></Route>
         <Route path="/domesticlogistics" component={DomesticLogistics}></Route>

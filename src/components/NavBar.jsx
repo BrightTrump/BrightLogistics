@@ -143,7 +143,7 @@ export default function NavBar() {
                 <Link to="/faqs">Faqs</Link>
               </li>
               <li className="link hover:text-secondary">
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contactus">Contact Us</Link>
               </li>
             </ul>
 

@@ -18,7 +18,7 @@ export default function OverseasShipping() {
       {/* Section 1 Starts Here */}
       <section>
         <div className="bg-[url(https://caspian-container.ch/storage/app/uploads/public/64b/52a/70a/64b52a70a6f6c134201268.jpg)] bg-cover h-[77vh] text-center">
-          <h2 className="text-3xl text-secondary font-bold pt-[8em]">
+          <h2 className="text-xl text-secondary font-bold pt-[12em]">
             Overseas Shipping
           </h2>
         </div>
@@ -27,7 +27,7 @@ export default function OverseasShipping() {
 
       {/* Section 2 Starts Here */}
       <section className="px-24 py-24">
-        <div className="flex gap-8 pb-[4em]">
+        <div className="flex gap-8 items-center pb-[4em]">
           <div>
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMYRD3dZSNmjwr2n0pnznAPTDbkKkHYJ4AlA&s"

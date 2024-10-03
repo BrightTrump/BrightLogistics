@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
 import { FaGoogleWallet, FaMoneyBills, FaWallet } from "react-icons/fa6";
 
-export default function CoporateLogistics() {
+export default function WalletAddedServices() {
   const pageName = "Home";
   const pageUrl = "/";
   return (
@@ -18,7 +18,7 @@ export default function CoporateLogistics() {
       {/* Section 1 Starts Here */}
       <section>
         <div className="bg-[url(https://cryptoapis.io/images/jprkwgZZt8yfEoG0jwJQlzoY1wm31ItGXC8tMUiI-1000x500.png)] bg-cover h-[77vh] text-center">
-          <h2 className="text-3xl text-secondary font-bold pt-[8em]">
+          <h2 className="text-xl text-secondary font-bold pt-[12em]">
             {/* Wallet and Added Services */}
           </h2>
         </div>
@@ -27,12 +27,12 @@ export default function CoporateLogistics() {
 
       {/* Section 2 Starts Here */}
       <section className="px-24 py-24">
-        <div className="flex gap-[8em] pb-[4em]">
+        <div className="flex gap-[8em] items-center pb-[4em]">
           <div>
             <img
               src="https://res.cloudinary.com/crowdicity-eu-cld/image/upload/c_fill,h_500,w_710/95184098_2923612661060837_2868282638915862528_n_791e6aeba0?__cld_token__=exp=1726656732~hmac=256ac6ced942557ae11b74b7e8b7dfe456cdd681205f704d421fa9d641e73cc8"
               alt=""
-              className="w-[45vw] h-[72vh]  shadow-2xl shadow-gray-800 rounded-[50%]"
+              className="w-[45vw] h-[60vh]  shadow-2xl shadow-gray-800 rounded-[50%]"
             />
           </div>
           <div className="max-w-[550px]">
@@ -54,20 +54,6 @@ export default function CoporateLogistics() {
               for you because we are your partner in progress!
             </p>
 
-            <div className="pt-6">
-              {/* <button
-                type="button"
-                onClick={alert}
-                className="py-1 px-2 rounded-md bg-primary text-white font-bold hover:bg-white hover:text-secondary hover:font-bold">
-                Ship Now
-              </button> */}
-              <Link
-                to="/merchantsignup"
-                target="_blank"
-                className="py-2 px-3 rounded-md bg-secondary text-white font-bold hover:bg-primary hover:text-white hover:font-bold">
-                Sign Up as a Coporate Partner
-              </Link>
-            </div>
           </div>
         </div>
       </section>

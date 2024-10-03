@@ -60,7 +60,7 @@ export default function Home() {
             id="wave">
             <p className="text-white font-bold pb-5">Air Freight</p>
             <Link to="/airfreight" className="text-secondary text-[.8em]">
-              Read more
+              Learn more...
             </Link>
           </div>
 
@@ -69,7 +69,7 @@ export default function Home() {
             id="wave">
             <p className="text-white font-bold pb-5">Ocean Freight</p>
             <Link to="/oceanfreight" className="text-secondary text-[.8em]">
-              Read more
+              Learn more...
             </Link>
           </div>
 
@@ -78,7 +78,7 @@ export default function Home() {
             id="wave">
             <p className="text-white font-bold pb-5">Land Transport</p>
             <Link to="/landtransport" className="text-secondary text-[.8em]">
-              Read more
+              Learn more...
             </Link>
           </div>
 
@@ -87,7 +87,7 @@ export default function Home() {
             id="wave">
             <p className="text-white font-bold pb-5">Mobility</p>
             <Link to="" className="text-secondary text-[.8em]">
-              Read more
+              Learn more...
             </Link>
           </div>
         </div>
@@ -101,7 +101,7 @@ export default function Home() {
           <div className="relative">
             <div className="w-[27vw] h-[40vh]">
               <img
-                src="../../assets/images/shipping11.png"
+                src="../../assets/images/domestic.png"
                 alt=""
                 className="w-[100%] h-[100%]"
               />
@@ -115,7 +115,7 @@ export default function Home() {
           <div className="relative">
             <div className="w-[27vw] h-[40vh]">
               <img
-                src="../../assets/images/shipping6.jfif"
+                src="../../assets/images/coporate.webp"
                 alt="A Picture is here"
                 className="w-[100%] h-[100%]"
               />
@@ -144,7 +144,7 @@ export default function Home() {
           <div className="relative">
             <div className="w-[27vw] h-[40vh]">
               <img
-                src="../../assets/images/shipping12.jpg"
+                src="../../assets/images/ecommerce.jpg"
                 alt=""
                 className="w-[100%] h-[100%]"
               />
@@ -158,7 +158,7 @@ export default function Home() {
           <div className="relative">
             <div className="w-[27vw] h-[40vh]">
               <img
-                src="../../assets/images/shipping13.jpg"
+                src="../../assets/images/pet2.jpg"
                 alt=""
                 className="w-[100%] h-[100%]"
               />
@@ -172,15 +172,15 @@ export default function Home() {
           <div className="relative">
             <div className="w-[27vw] h-[40vh]">
               <img
-                src="../../assets/images/shipping9.webp"
+                src="https://techcrunch.com/wp-content/uploads/2021/04/Crypto-on-Venmo-2.jpg?w=1280"
                 alt="A Cargo"
                 className="w-[100%] h-[100%]"
               />
             </div>
             <Link
-              to="/separatedelivery"
+              to="/walletaddedservices"
               className="absolute bottom-[5.8%] hover:bg-tertiary bg-secondary font-bold p-2 text-white">
-              Separate Delivery
+              Wallet Added Services
             </Link>
           </div>
         </div>
