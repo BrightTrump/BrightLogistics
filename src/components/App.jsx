@@ -7,12 +7,16 @@ import OverseasShipping from "../pages/services/OverseasShipping";
 import EcommerceLogistics from "../pages/services/EcommerceLogistics";
 import PetTransport from "./../pages/services/PetTransport";
 import WalletAddedServices from "../pages/services/WalletAddedServices";
-import AirFreight from "./../pages/shippingmode/AirFreight";
+import AirFreight from './../pages/shippingmode/AirFreight';
+import OceanFreight from "../pages/shippingmode/Oceanfreight";
+import Faqs from "./../pages/Faqs";
 
 function App() {
   return (
     <>
       <Switch>
+        <Route path="/faqs" component={Faqs}></Route>
+        <Route path="/oceanfreight" component={OceanFreight}></Route>
         <Route path="/airfreight" component={AirFreight}></Route>
         <Route
           path="/walletaddedservices"

@@ -5,8 +5,6 @@ import Footer from "../../components/Footer";
 import { FaGoogleWallet, FaMoneyBills, FaWallet } from "react-icons/fa6";
 
 export default function WalletAddedServices() {
-  const pageName = "Home";
-  const pageUrl = "/";
   return (
     <div>
       {/* Header Starts Here */}

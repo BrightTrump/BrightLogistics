@@ -1,9 +1,9 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import NavBar from "../../components/NavBar";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
 
-export default function AirFreight() {
+export default function OceanFreight() {
   // State to handle which FAQ is open (using an index)
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
@@ -32,7 +32,7 @@ export default function AirFreight() {
       <section className="px-24 py-24">
         <div className="flex justify-between w-[100%] items-center pb-[4em]">
           <div className="w-[50%]">
-            <h1 className="text-6xl font-bold pb-8">Air Freight</h1>
+            <h1 className="text-6xl font-bold pb-8">Ocean Freight</h1>
             <p className="pb-3">
               While air freight generally comes at a higher cost compared to
               road or sea freight, it stands as the optimal choice when

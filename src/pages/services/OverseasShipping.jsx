@@ -5,8 +5,6 @@ import Footer from "../../components/Footer";
 import { FaPlane, FaPlaneArrival, FaPlaneDeparture } from "react-icons/fa6";
 
 export default function OverseasShipping() {
-  const pageName = "Home";
-  const pageUrl = "/";
   return (
     <div>
       {/* Header Starts Here */}

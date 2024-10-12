@@ -24,8 +24,8 @@ export default function Home() {
       {/* Header Ends Here */}
 
       {/* Section-1 Starts Here */}
-      <section className=" relative flex flex-col content-center items-center  bg-[url(https://odysseyuae.com/wp-content/uploads/2019/06/slider-2.jpg)] bg-cover h-svh  ">
-        <p className=" text-4xl text-center capitalize max-w-2xl pt-64">
+      <section className=" relative flex flex-col content-center items-center bg-[url(https://odysseyuae.com/wp-content/uploads/2019/06/slider-2.jpg)] bg-cover h-svh  ">
+        <p className=" text-4xl text-center capitalize max-w-2xl pt-80">
           Provide Your Tracking ID To Track Your shipment progress.
         </p>
         <div className="flex justify-center mt-5">
@@ -53,8 +53,8 @@ export default function Home() {
       {/* Section-1 Ends Here */}
 
       {/* Section-2 Starts Here */}
-      <section className="mx-24 absolute bottom-[-17%] md:bottom-[-12%] w-[90%] flex items-center ">
-        <div className="flex justify-between w-[90%]  items-center  ">
+      <section className="absolute bottom-[-17%] md:bottom-[-12%] w-[100%] flex items-center ">
+        <div className="px-24 flex justify-between w-[100%]  items-center">
           <div
             className="bg-primary hover:bg-tertiary text-center w-[30%] p-[4em] border-2 border-gray-400 animate-pulse"
             id="wave">
@@ -95,7 +95,7 @@ export default function Home() {
       {/* Section-2 Ends Here */}
 
       {/* Section-3 Starts Here */}
-      <section className="mx-24 mt-[10em]">
+      <section className="mx-24 mt-[15em]">
         <h3 className="text-center font-bold text-4xl pb-7">What We Offer</h3>
         <div className="flex justify-between flex-wrap w-[98%] h-[85vh]">
           <div className="relative">
@@ -188,18 +188,18 @@ export default function Home() {
       {/* Section-3 Ends Here */}
 
       {/* Section-4 Starts Here */}
-      <section className="mt-16 pb-36 bg-black ">
+      <section className="mt-16 pb-36 bg-black">
         <h3 className="text-center font-bold text-4xl text-white pt-24 pb-12">
           Shipping Solutions
         </h3>
-        <div className="relative px-24 flex gap-9 ">
-          <div className="w-[95vw] h-[52vh]">
+        <div className="relative px-24 flex gap-9 w-[100%]">
+          <div className="w-[50%] h-[30vh]">
             <img
               src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hpcHBpbmd8ZW58MHx8MHx8fDA%3D"
               alt=""
               className="w-[100%] h-[100%]"
             />
-            <p className="absolute bottom-[-0.1%] bg-primary text-white w-[39.1vw] px-1 ">
+            <p className="absolute bottom-[-0.1%] bg-primary text-white max-w-[41vw] px-1 ">
               We've had the pleasure of experiencing the exceptional service
               provided by BrightLogistics in ocean transportation. We're excited
               to enhance our shipping collaboration with you all.
@@ -286,9 +286,9 @@ export default function Home() {
 
       {/* Section-6 Starts Here */}
       <section className="  bg-black ">
-        <div className="flex gap-52 justify-items-end items-center px-24 pt-24 pb-24">
-          <div className="">
-            <p className=" text-3xl text-white max-w-[400px] pb-20">
+        <div className="flex gap-52 justify-between items-center px-24 pt-24 pb-24">
+          <div className="w-[50%]">
+            <p className=" text-3xl text-white  pb-20">
               BLI, the app for Local and International shipping
             </p>
 
@@ -332,8 +332,8 @@ export default function Home() {
         <h3 className="text-center font-bold text-3xl pt-24">
           Logistic Solutions
         </h3>
-        <div className="px-24 flex gap-[7em] py-20 ">
-          <div className="">
+        <div className="px-24 flex justify-between py-20 ">
+          <div className="w-[50%]">
             <p className="text-xl pb-4 text-tertiary">
               The Information is Readily Apparent.
             </p>
@@ -371,7 +371,7 @@ export default function Home() {
             </div>
           </div>
           {/* Input Form Starts Here */}
-          <form action="">
+          <form action="w-[50%]">
             <div className="form-content">
               <p className="text-md font-bold pb-3">Get a Free Quote</p>
               <div className="form-block">

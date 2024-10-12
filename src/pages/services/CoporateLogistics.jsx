@@ -12,8 +12,6 @@ import {
 } from "react-icons/fa6";
 
 export default function CoporateLogistics() {
-  const pageName = "Home";
-  const pageUrl = "/";
   return (
     <div>
       {/* Header Starts Here */}

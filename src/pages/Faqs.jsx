@@ -1,19 +1,19 @@
-import React, {useState} from "react";
-import NavBar from "../../components/NavBar";
-import { Link } from "react-router-dom";
-import Footer from "../../components/Footer";
+import React, { useState } from "react";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
-export default function AirFreight() {
+export default function Faqs() {
   // State to handle which FAQ is open (using an index)
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
   // Toggle the FAQ details
   const toggleFaqDetails = (index) =>
     setOpenFaqIndex(openFaqIndex === index ? null : index); // Toggle open/close
+
   return (
     <div>
       {/* Header Starts Here */}
-      <header className="">
+      <header>
         <NavBar />
       </header>
       {/* Header Ends Here */}
@@ -21,83 +21,12 @@ export default function AirFreight() {
       {/* Section 1 Starts Here */}
       <section>
         <div className="bg-[url(https://mll5eakftz0f.i.optimole.com/cb:1V_b.1a2e8/w:1100/h:650/q:mauto/f:best/https://atoshipping.com/wp-content/uploads/2022/11/1100-x-650-Plane-In-Air.png)] bg-cover h-[77vh] text-center">
-          <h2 className="text-xl text-secondary font-bold pt-[10em]">
-            Air Freight
-          </h2>
+          <h2 className="text-xl text-blaq font-bold pt-[10em]">FAQS</h2>
         </div>
       </section>
       {/* Section 1 Ends Here */}
 
-      {/* Section 2 Starts Here */}
-      <section className="px-24 py-24">
-        <div className="flex justify-between w-[100%] items-center pb-[4em]">
-          <div className="w-[50%]">
-            <h1 className="text-6xl font-bold pb-8">Air Freight</h1>
-            <p className="pb-3">
-              While air freight generally comes at a higher cost compared to
-              road or sea freight, it stands as the optimal choice when
-              prioritizing swift and secure deliveries. This holds particularly
-              true in scenarios where you must transport delicate, perishable,
-              or time-critical items, or when facing pressing deadlines. The
-              advantages of opting for air freight over road or sea alternatives
-              encompass:
-            </p>
-            <li>
-              <span>
-                Enhanced management of deliveries, thanks to shorter transit
-                durations.
-              </span>
-            </li>
-            <li>
-              <span>
-                Diminished the necessity for expenditures on labor and packaging
-                expenses.
-              </span>
-            </li>
-            <li>
-              <span>
-                Reduced likelihood of goods being damaged, stolen, or lost.
-              </span>
-            </li>
-            <li>
-              <span>
-                In certain instances, reduced insurance premiums result from
-                decreased exposure to risk
-              </span>
-            </li>
-            <p className="">
-              Irrespective of the shipment's size, Bright Logistics
-              International is dedicated to ensuring its timely delivery to its
-              destination. At Logisco, we treat your parcel deliveries with the
-              same level of care and professionalism as we do with major freight
-              shipments
-            </p>
-
-            <div className="pt-6 flex gap-4">
-              <Link
-                to="/signup"
-                className="py-1 px-2 rounded-md bg-primary text-white font-bold hover:bg-white hover:text-secondary hover:font-bold">
-                Ship Now
-              </Link>
-              <Link
-                to="/getquote"
-                className="py-1 px-2 rounded-md bg-secondary text-white font-bold hover:bg-tertiary hover:text-white hover:font-bold">
-                Get Quote
-              </Link>
-            </div>
-          </div>
-          <div>
-            <img
-              src="https://www.nindelivers.com/wp-content/uploads/2019/04/air-freight.jpeg"
-              alt=""
-              className="w-[35vw] h-[70vh]  shadow-2xl shadow-gray-800 rounded-[50%]"
-            />
-          </div>
-        </div>
-      </section>
-      {/* Section-2 Ends Here */}
-
-      {/* Section-3 Starts Here */}
+      {/* Section-2 Starts Here */}
       <section className="px-24 py-32">
         <p className="text-6xl text-center font-bold pb-14">
           Our Air Freight services
@@ -224,11 +153,10 @@ export default function AirFreight() {
           </div>
         </div>
       </section>
-      {/* Section-3 Ends Here */}
-
+      {/* Section-2 Ends Here */}
       {/* Footer Starts Here  */}
       <Footer />
-      {/* Footer Ends Here  */}
+      {/* Footer Ends Here */}
     </div>
   );
 }

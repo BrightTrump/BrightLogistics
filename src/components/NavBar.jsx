@@ -44,8 +44,8 @@ export default function NavBar() {
 
   return (
     <div>
-      <div className="z-10 w-full bg-primary fixed top-0 ">
-        <div className="w-[98%] h-[12vh]  flex justify-between items-center mx-auto max-w-[87%] text-white">
+      <div className="z-10 w-full h-20 bg-primary fixed top-0 ">
+        <div className=" container mx-auto flex justify-between items-center max-w-[87%] text-white">
           <Link to="/" className="logo w-16 flex items-center">
             <img
               src="../../assets/images/logo.png"
@@ -84,7 +84,7 @@ export default function NavBar() {
                 </button>
                 {servicesDropdownVisible && (
                   <ul
-                    className=" mt-1 p-4 absolute bg-white text-black text-[1em] w-[20vw] h-[45vh] pointer"
+                    className=" mt-1 p-4 absolute bg-white text-black text-[1em] w-[20vw] h-[42vh] pointer"
                     onMouseOver={showServicesDropdown} //Keep dropdown open when hovering over the dropdown
                     onMouseOut={hideServicesDropdown} //Close dropdown when moving mouse out of dropdown services
                   >
@@ -104,7 +104,9 @@ export default function NavBar() {
                       <Link to="/pettransport">Pet Transport</Link>
                     </li>
                     <li className="pb-5  hover:text-secondary">
-                      <Link to="/walletaddedservices">Wallet and Added Services</Link>
+                      <Link to="/walletaddedservices">
+                        Wallet and Added Services
+                      </Link>
                     </li>
                   </ul>
                 )}
