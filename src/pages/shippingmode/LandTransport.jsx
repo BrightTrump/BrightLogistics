@@ -3,7 +3,7 @@ import NavBar from "../../components/NavBar";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
 
-export default function AirFreight() {
+export default function LandTransport() {
   // State to handle which FAQ is open (using an index)
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
@@ -13,16 +13,16 @@ export default function AirFreight() {
   return (
     <div>
       {/* Header Starts Here */}
-      <header className="">
+      <header>
         <NavBar />
       </header>
       {/* Header Ends Here */}
 
       {/* Section 1 Starts Here */}
       <section>
-        <div className="bg-[url(https://mll5eakftz0f.i.optimole.com/cb:1V_b.1a2e8/w:1100/h:650/q:mauto/f:best/https://atoshipping.com/wp-content/uploads/2022/11/1100-x-650-Plane-In-Air.png)] bg-cover h-[77vh] text-center">
-          <h2 className="text-xl text-secondary font-bold pt-[10em]">
-            Air Freight
+        <div className="bg-[url(https://cdn.prod.website-files.com/6500932f69ea92e4ff2c49d0/6509f665ccb8bffd24c278ca_container-truck-ship-port-ai-generated-image.jpg)] bg-cover h-[77vh] text-center">
+          <h2 className="text-xl text-white font-bold pt-[18em]">
+            Land Transport
           </h2>
         </div>
       </section>
@@ -32,46 +32,56 @@ export default function AirFreight() {
       <section className="px-24 py-24">
         <div className="flex justify-between w-[100%] items-center pb-[4em]">
           <div className="w-[50%]">
-            <h1 className="text-6xl font-bold pb-8">Air Freight</h1>
+            <h1 className="text-6xl font-bold pb-8">Land Transport</h1>
             <p className="pb-3">
-              While air freight generally comes at a higher cost compared to
-              road or sea freight, it stands as the optimal choice when
-              prioritizing swift and secure deliveries. This holds particularly
-              true in scenarios where you must transport delicate, perishable,
-              or time-critical items, or when facing pressing deadlines. The
-              advantages of opting for air freight over road or sea alternatives
-              encompass:
+              BrightLogistics offers comprehensive local and international
+              shipping solutions, handling shipments of all sizes, from full
+              container loads (FCL) to less than container loads (LCL), with
+              over two decades of expertise in container shipping, we specialize
+              in FCL, LCL, and reefer (refrigerated) containers. Our experts
+              tailor supply chain strategies to meet your unique business needs,
+              focusing on improving efficiency and reducing costs for a seamless
+              shipping process.
+            </p>
+            <p className="pb-3">
+              Whether you engage in importing or exporting LCL, FCL, or charter
+              shipments, rest assured that BrightLogistics is your dependable
+              partner for delivering a wide range of valuable services in the
+              industry. You can have confidence in our strengths:
             </p>
             <li>
               <span>
-                Enhanced management of deliveries, thanks to shorter transit
-                durations.
+                Innovative, tailor-made EDI programs crafted for worldwide
+                operational efficiency: Global EDI Solutions.
               </span>
             </li>
             <li>
               <span>
-                Diminished the necessity for expenditures on labor and packaging
-                expenses.
+                Tailored shipping solutions crafted to accommodate your distinct
+                shipping requirements.
               </span>
             </li>
             <li>
               <span>
-                Reduced likelihood of goods being damaged, stolen, or lost.
+                Whether it's from your doorstep to your destination or from one
+                station to another, we provide competitive pricing and
+                dependable service.
               </span>
             </li>
             <li>
               <span>
-                In certain instances, reduced insurance premiums result from
-                decreased exposure to risk
+                Global Communications Network - Accessible around the clock,
+                every day of the week.
               </span>
             </li>
-            <p className="">
-              Irrespective of the shipment's size, BrightLogistics
-              International is dedicated to ensuring its timely delivery to its
-              destination. At Logisco, we treat your parcel deliveries with the
-              same level of care and professionalism as we do with major freight
-              shipments
-            </p>
+            <li>
+              <span>
+                Entrust your Customs Brokerage needs to us with absolute
+                assurance – Our dedicated team collaborates closely with you to
+                guarantee meticulous and precise handling of customs
+                regulations, tariffs, and import/export prerequisites.
+              </span>
+            </li>
 
             <div className="pt-6 flex gap-4">
               <Link
@@ -88,7 +98,7 @@ export default function AirFreight() {
           </div>
           <div>
             <img
-              src="https://www.nindelivers.com/wp-content/uploads/2019/04/air-freight.jpeg"
+              src="https://infinite.com.vn/wp-content/uploads/2022/07/Road-Freight2-1-801.jpg"
               alt=""
               className="w-[35vw] h-[70vh]  shadow-2xl shadow-gray-800 rounded-[50%]"
             />
@@ -100,14 +110,14 @@ export default function AirFreight() {
       {/* Section-3 Starts Here */}
       <section className="px-24 py-32">
         <p className="text-6xl text-center font-bold pb-14">
-          Our Air Freight Services
+          Our Land Transport Services
         </p>
         <div className="flex justify-between items-center w-[100%] pb-24">
           <div className="w-45%">
             <img
               src="https://www.maersk.com/~/media_sc9/maersk/news/press-releases/images/2024/02/12/maersk-airfreight_1024x576.jpg?w=877&hash=70D6CBFD46A0D598660AFB0B64B6F07D"
               alt=""
-              className="w-[35vw] h-[40vh] rounded-[5%] bg-right-top"
+              className="w-[35vw] h-[50vh] rounded-[5%] bg-right-top"
             />
           </div>
           <div className="w-[55%]">
@@ -124,17 +134,15 @@ export default function AirFreight() {
               </div>
               {openFaqIndex === 0 && (
                 <p className="p-2">
-                  Operating from the United States, we serve 155 countries by
-                  gathering your package and ensuring its direct delivery to
-                  your designated recipient, including handling Customs
-                  Clearance, at the ultimate destination.
+                  From every town and city, we gather your shipment and deliver
+                  it directly to your consignee at the ultimate destination.
                 </p>
               )}
             </div>
 
             <div className="pt-4">
               <div className="relative flex justify-between items-center pl-2 py-2 w-[100%] border-2 border-tertiary bg-tertiary">
-                <p className="font-bold">Door to Airport</p>
+                <p className="font-bold">Door to Station</p>
                 <button
                   type="button"
                   className="absolute top-[-0.1em] right-[-3px] w-10 h-[45px]  bg-primary border-2 border-primary font-bold text-white text-xl text-center"
@@ -144,10 +152,9 @@ export default function AirFreight() {
               </div>
               {openFaqIndex === 1 && (
                 <p className="p-2">
-                  We retrieve your package and arrange for its delivery to any
-                  customs airport across the globe. Upon its arrival at the
-                  destination's local airport, we promptly inform the recipient,
-                  and simultaneously furnish you with a Proof-of-Arrival
+                  We gather your cargo and arrange delivery to Stations across
+                  the nation. Once it reaches the nearest Station, we promptly
+                  inform the recipient and furnish you with a Proof-of-Arrival
                   notification.
                 </p>
               )}
@@ -155,7 +162,7 @@ export default function AirFreight() {
 
             <div className="pt-4">
               <div className="relative flex justify-between items-center pl-2 py-2 w-[100%] border-2 border-tertiary bg-tertiary">
-                <p className="font-bold">Airport to Door</p>
+                <p className="font-bold">Station to Door</p>
                 <button
                   type="button"
                   className="absolute top-[-0.1em] right-[-3px] w-10 h-[45px]  bg-primary border-2 border-primary font-bold text-white text-xl text-center"
@@ -165,17 +172,16 @@ export default function AirFreight() {
               </div>
               {openFaqIndex === 2 && (
                 <p className="p-2">
-                  The client is responsible for delivering all goods to our
-                  warehouse, and from there, we handle direct delivery to your
-                  consignee at the final destination, which includes Customs
-                  Clearance services.
+                  The shipper transports all merchandise to our loading area,
+                  and we provide direct delivery to your consignee at the
+                  ultimate destination.
                 </p>
               )}
             </div>
 
             <div className="pt-4">
               <div className="relative flex justify-between items-center pl-2 py-2 w-[100%] border-2 border-tertiary bg-tertiary">
-                <p className="font-bold">Airport to Airport</p>
+                <p className="font-bold">Station to Station</p>
                 <button
                   type="button"
                   className="absolute top-[-0.1em] right-[-3px] w-10 h-[45px]  bg-primary border-2 border-primary font-bold text-white text-xl text-center"
@@ -185,12 +191,49 @@ export default function AirFreight() {
               </div>
               {openFaqIndex === 3 && (
                 <p className="p-2">
-                  The client delivers their goods to our airport office, from
-                  where we arrange for the shipment to reach any customs airport
-                  worldwide. Upon arrival at the destination city, we promptly
-                  inform the local consignee and furnish you with a
-                  Proof-of-Arrival notification following confirmation of
-                  check-in at the destination airport.
+                  The shipper delivers all goods directly to our dock, from
+                  where we handle the transportation to any delivering choice
+                  across the country. Upon arrival at the destination city, we
+                  promptly inform the local consignee and furnish you with a
+                  Proof-of-Arrival notification once the shipment is confirmed
+                  at the delivery destination.
+                </p>
+              )}
+            </div>
+
+            <div className="pt-4">
+              <div className="relative flex justify-between items-center pl-2 py-2 w-[100%] border-2 border-tertiary bg-tertiary">
+                <p className="font-bold">Reserved Vehicle</p>
+                <button
+                  type="button"
+                  className="absolute top-[-0.1em] right-[-3px] w-10 h-[45px]  bg-primary border-2 border-primary font-bold text-white text-xl text-center"
+                  onClick={() => toggleFaqDetails(4)}>
+                  {openFaqIndex === 4 ? "-" : "+"}
+                </button>
+              </div>
+              {openFaqIndex === 4 && (
+                <p className="p-2">
+                  We offer a diverse range of commercial vehicles, including
+                  vans, flatbeds, and tractor-trailers, for transportation to
+                  and from any location across the entire country.
+                </p>
+              )}
+            </div>
+
+            <div className="pt-4">
+              <div className="relative flex justify-between items-center pl-2 py-2 w-[100%] border-2 border-tertiary bg-tertiary">
+                <p className="font-bold">Storage Facilities</p>
+                <button
+                  type="button"
+                  className="absolute top-[-0.1em] right-[-3px] w-10 h-[45px]  bg-primary border-2 border-primary font-bold text-white text-xl text-center"
+                  onClick={() => toggleFaqDetails(5)}>
+                  {openFaqIndex === 5 ? "-" : "+"}
+                </button>
+              </div>
+              {openFaqIndex === 5 && (
+                <p className="p-2">
+                  We offer the capability to organize and manage warehousing
+                  solutions for both extended and brief durations as required.
                 </p>
               )}
             </div>
@@ -201,13 +244,15 @@ export default function AirFreight() {
                 <button
                   type="button"
                   className="absolute top-[-0.1em] right-[-3px] w-10 h-[45px]  bg-primary border-2 border-primary font-bold text-white text-xl text-center"
-                  onClick={() => toggleFaqDetails(4)}>
-                  {openFaqIndex === 4 ? "-" : "+"}
+                  onClick={() => toggleFaqDetails(6)}>
+                  {openFaqIndex === 6 ? "-" : "+"}
                 </button>
               </div>
-              {openFaqIndex === 4 && (
+              {openFaqIndex === 6 && (
                 <ul className="p-2">
-                  <li>Integration</li>
+                  <li>
+                    <span>Integration</span>
+                  </li>
                   <li>Definitely Timed</li>
                   <li>Faster Delivery / Priority Airlif</li>
                   <li>

@@ -135,7 +135,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="pb-3">
-                <Link to="/walletaddedservices" className="hover:text-secondary">
+                <Link
+                  to="/walletaddedservices"
+                  className="hover:text-secondary">
                   Wallet and Added Services
                 </Link>
               </li>
@@ -167,9 +169,8 @@ export default function Footer() {
           {/* Nexted Links Ends Here */}
         </div>
 
-        <p className="text-white text-center pt-20">
-          &copy; 2019 - <span></span>
-          BrightLogistics All Rights Reserved
+        <p className="text-white text-center pt-20">CopyRight &copy; 2019 - <span>{new Date().getFullYear()}</span> BrightLogistics
+          All Rights Reserved
         </p>
       </footer>
     </div>

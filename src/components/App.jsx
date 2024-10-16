@@ -9,6 +9,7 @@ import PetTransport from "./../pages/services/PetTransport";
 import WalletAddedServices from "../pages/services/WalletAddedServices";
 import AirFreight from './../pages/shippingmode/AirFreight';
 import OceanFreight from "../pages/shippingmode/Oceanfreight";
+import LandTransport from "../pages/shippingmode/LandTransport";
 import Faqs from "./../pages/Faqs";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <>
       <Switch>
         <Route path="/faqs" component={Faqs}></Route>
+        <Route path="/landtransport" component={LandTransport}></Route>
         <Route path="/oceanfreight" component={OceanFreight}></Route>
         <Route path="/airfreight" component={AirFreight}></Route>
         <Route

@@ -44,7 +44,7 @@ export default function NavBar() {
 
   return (
     <div>
-      <div className="z-10 w-full h-20 bg-primary fixed top-0 ">
+      <div className="z-10 w-full h-16 bg-primary fixed top-0 ">
         <div className=" container mx-auto flex justify-between items-center max-w-[87%] text-white">
           <Link to="/" className="logo w-16 flex items-center">
             <img
@@ -133,10 +133,10 @@ export default function NavBar() {
                       <Link to="/airfreight">Air Freight</Link>
                     </li>
                     <li className="pb-5 hover:text-secondary">
-                      <Link to="/oceanfrieght">Ocean Freight</Link>
+                      <Link to="/oceanfreight">Ocean Freight</Link>
                     </li>
                     <li className="pb-5 hover:text-secondary">
-                      <Link to="/land-transport">Land Transport</Link>
+                      <Link to="/landtransport">Land Transport</Link>
                     </li>
                   </ul>
                 )}

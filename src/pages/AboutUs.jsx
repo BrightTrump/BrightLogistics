@@ -15,25 +15,27 @@ export default function AboutUs() {
 
       {/* Section 1 Starts Here */}
       <section>
-        <div className="bg-[url(https://compasstutors.com.ng/wp-content/uploads/2017/08/about-us.jpg)] bg-cover h-[65vh]">
-        
-        </div>
+        <div className="bg-[url(https://compasstutors.com.ng/wp-content/uploads/2017/08/about-us.jpg)] bg-cover h-[65vh]"></div>
       </section>
       {/* Section 1 Ends Here */}
 
       {/* Section 2 Starts Here */}
-      <section className="px-24 pb-28">
-        <h2 className="text-center text-3xl font-bold py-20">Who We Are</h2>
-        <div className="flex gap-8 pb-[4em]">
-          <div className="w-[85vw] h-[40vh]">
-            <img src="../assets/images/coporate.webp" alt="" className="" />
+      <section className="px-24 py-32">
+        <h2 className="text-center text-3xl font-bold pb-12">Who We Are</h2>
+        <div className="flex justify-between w-[100%] pb-[4em]">
+          <div className="w-[45%]">
+            <img
+              src="../assets/images/coporate.webp"
+              alt=""
+              className="h-[40vh]"
+            />
             <img
               src="../assets/images/aboutus.avif"
               alt=""
-              className="pt-4"
+              className="pt-4 w-[46%] h-[40vh]"
             />
           </div>
-          <div className="max-w-[550px]">
+          <div className="w-[50%]">
             <p className="pb-3">
               <span className="text-secondary text-[1.2em] font-bold">
                 Welcome to BrightLogistics –
@@ -185,7 +187,9 @@ export default function AboutUs() {
               BrightLogistics.
             </p>
 
-            <Link to="/contactus" className="bg-secondary text-white rounded-md font-bold p-2 hover:bg-primary">
+            <Link
+              to="/contactus"
+              className="bg-secondary text-white rounded-md font-bold p-2 hover:bg-primary">
               Contact Us
             </Link>
           </div>

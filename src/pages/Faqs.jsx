@@ -20,8 +20,8 @@ export default function Faqs() {
 
       {/* Section 1 Starts Here */}
       <section>
-        <div className="bg-[url(https://mll5eakftz0f.i.optimole.com/cb:1V_b.1a2e8/w:1100/h:650/q:mauto/f:best/https://atoshipping.com/wp-content/uploads/2022/11/1100-x-650-Plane-In-Air.png)] bg-cover h-[77vh] text-center">
-          <h2 className="text-xl text-blaq font-bold pt-[10em]">FAQS</h2>
+        <div className="bg-[url(https://cdn.sanity.io/images/bmk0zfcx/production/b54c36b6139ca5ce26e0b49d3a1bdbe658299df2-841x632.png?auto=format&h=768&w=1024&fit=crop)] bg-cover h-[77vh] text-center">
+          <h2 className="hidden text-xl text-blaq font-bold pt-[10em]">FAQS</h2>
         </div>
       </section>
       {/* Section 1 Ends Here */}
@@ -29,20 +29,29 @@ export default function Faqs() {
       {/* Section-2 Starts Here */}
       <section className="px-24 py-32">
         <p className="text-6xl text-center font-bold pb-14">
-          Our Air Freight services
+          Frequently Asked Questions
         </p>
-        <div className="flex justify-between items-center w-[100%] pb-24">
-          <div className="w-45%">
-            <img
-              src="https://www.maersk.com/~/media_sc9/maersk/news/press-releases/images/2024/02/12/maersk-airfreight_1024x576.jpg?w=877&hash=70D6CBFD46A0D598660AFB0B64B6F07D"
-              alt=""
-              className="w-[35vw] h-[40vh] rounded-[5%] bg-right-top"
-            />
+        <div className="flex justify-between items-start w-[100%] pb-24">
+          <div className="w-[42%]">
+            <p className="pb-4">
+              Discover solutions to inquiries regarding your shipments, how to
+              get track your package, how to contact customer support,
+              International shipping, and how to schedule a specific delivery
+              date and time. BrighttLogistics, a brand you can trust with your
+              shipments <span className="text-xl text-secondary">100%.</span>
+            </p>
+            <div className="w-[97%]">
+              <img
+                src="assets/images/faq.png"
+                alt=""
+                className="w-[100%] h-[42vh] rounded-[5%] bg-right-top"
+              />
+            </div>
           </div>
           <div className="w-[55%]">
             <div className="border-2 border-tertiary w-[100%]">
               <div className="relative flex justify-between items-center pl-2 py-2 w-[100%] border-2 border-tertiary bg-tertiary">
-                <p className="font-bold">Door to Door</p>
+                <p className="font-bold">How can I track my shipment?</p>
                 <button
                   type="button"
                   className="absolute top-[-0.1em] right-[-3px] w-10 h-[45px]  bg-primary border-2 border-primary font-bold text-white text-xl text-center"
@@ -53,17 +62,25 @@ export default function Faqs() {
               </div>
               {openFaqIndex === 0 && (
                 <p className="p-2">
-                  Operating from the United States, we serve 155 countries by
-                  gathering your package and ensuring its direct delivery to
-                  your designated recipient, including handling Customs
-                  Clearance, at the ultimate destination.
+                  Visit our Website: brightlogistics.com. Find the Tracking
+                  Section: Look for "Track Your Package" on the homepage. Enter
+                  Tracking Number: Input the tracking number provided at the
+                  time of your order. Click "Track": After entering the number,
+                  click the "Track" button. View Package Status: See the
+                  real-time status and location of your package, including
+                  updates and estimated delivery. Get Notifications: Sign up for
+                  email/SMS alerts for ongoing updates. For any issues, contact
+                  us at support@brightlogistics.com. Note that tracking info may
+                  take a short time to update after dispatch.
                 </p>
               )}
             </div>
 
-            <div className="pt-4">
+            <div className="pt-4 border-2 border-tertiary">
               <div className="relative flex justify-between items-center pl-2 py-2 w-[100%] border-2 border-tertiary bg-tertiary">
-                <p className="font-bold">Door to Airport</p>
+                <p className="font-bold">
+                  Do you offer International shipping?
+                </p>
                 <button
                   type="button"
                   className="absolute top-[-0.1em] right-[-3px] w-10 h-[45px]  bg-primary border-2 border-primary font-bold text-white text-xl text-center"
@@ -73,18 +90,18 @@ export default function Faqs() {
               </div>
               {openFaqIndex === 1 && (
                 <p className="p-2">
-                  We retrieve your package and arrange for its delivery to any
-                  customs airport across the globe. Upon its arrival at the
-                  destination's local airport, we promptly inform the recipient,
-                  and simultaneously furnish you with a Proof-of-Arrival
-                  notification.
+                  Yes, we do Create an Account: To get started, you'll need to
+                  create an account. This typically involves providing an email
+                  address, creating a username, and setting a password.
                 </p>
               )}
             </div>
 
-            <div className="pt-4">
+            <div className="pt-4 border-2 border-tertiary">
               <div className="relative flex justify-between items-center pl-2 py-2 w-[100%] border-2 border-tertiary bg-tertiary">
-                <p className="font-bold">Airport to Door</p>
+                <p className="font-bold">
+                  Can I schedule a specific delivery date and time?
+                </p>
                 <button
                   type="button"
                   className="absolute top-[-0.1em] right-[-3px] w-10 h-[45px]  bg-primary border-2 border-primary font-bold text-white text-xl text-center"
@@ -94,17 +111,17 @@ export default function Faqs() {
               </div>
               {openFaqIndex === 2 && (
                 <p className="p-2">
-                  The client is responsible for delivering all goods to our
-                  warehouse, and from there, we handle direct delivery to your
-                  consignee at the final destination, which includes Customs
-                  Clearance services.
+                  Our team of experts and company policy allows our clients to
+                  schedule their dpecific date and time of delivery.
                 </p>
               )}
             </div>
 
-            <div className="pt-4">
+            <div className="pt-4 border-2 border-tertiary">
               <div className="relative flex justify-between items-center pl-2 py-2 w-[100%] border-2 border-tertiary bg-tertiary">
-                <p className="font-bold">Airport to Airport</p>
+                <p className="font-bold">
+                  Can I change the delivery address after placing an order?
+                </p>
                 <button
                   type="button"
                   className="absolute top-[-0.1em] right-[-3px] w-10 h-[45px]  bg-primary border-2 border-primary font-bold text-white text-xl text-center"
@@ -114,19 +131,17 @@ export default function Faqs() {
               </div>
               {openFaqIndex === 3 && (
                 <p className="p-2">
-                  The client delivers their goods to our airport office, from
-                  where we arrange for the shipment to reach any customs airport
-                  worldwide. Upon arrival at the destination city, we promptly
-                  inform the local consignee and furnish you with a
-                  Proof-of-Arrival notification following confirmation of
-                  check-in at the destination airport.
+                  Yes, you can also make changes to your delivery name, date and
+                  time.
                 </p>
               )}
             </div>
 
-            <div className="pt-4">
+            <div className="pt-4 border-2 border-tertiary">
               <div className="relative flex justify-between items-center pl-2 py-2 w-[100%] border-2 border-tertiary bg-tertiary">
-                <p className="font-bold">Supplementary Services</p>
+                <p className="font-bold">
+                  Do you have a live chat or phone support option?
+                </p>
                 <button
                   type="button"
                   className="absolute top-[-0.1em] right-[-3px] w-10 h-[45px]  bg-primary border-2 border-primary font-bold text-white text-xl text-center"
@@ -135,19 +150,84 @@ export default function Faqs() {
                 </button>
               </div>
               {openFaqIndex === 4 && (
-                <ul className="p-2">
-                  <li>Integration</li>
-                  <li>Definitely Timed</li>
-                  <li>Faster Delivery / Priority Airlif</li>
-                  <li>
-                    Tailored aircraft charter solutions to accommodate your
-                    unique requirements, whether for full or partial bookings.
-                  </li>
-                  <li>
-                    Manual Delivery and Courier Services available for numerous
-                    destinations
-                  </li>
-                </ul>
+                <p className="p-2">
+                  Attached to this site is a live-chat, It is located at the
+                  bottom-left part of the screen of your device.
+                </p>
+              )}
+            </div>
+
+            <div className="pt-4 border-2 border-tertiary">
+              <div className="relative flex justify-between items-center pl-2 py-2 w-[100%] border-2 border-tertiary bg-tertiary">
+                <p className="font-bold">
+                  How can I contact your customer support?
+                </p>
+                <button
+                  type="button"
+                  className="absolute top-[-0.1em] right-[-3px] w-10 h-[45px]  bg-primary border-2 border-primary font-bold text-white text-xl text-center"
+                  onClick={() => toggleFaqDetails(5)}>
+                  {openFaqIndex === 5 ? "-" : "+"}
+                </button>
+              </div>
+              {openFaqIndex === 5 && (
+                <p className="p-2">
+                  You can reach our customer support on
+                  support@brightlogistics.com.
+                </p>
+              )}
+            </div>
+
+            <div className="pt-4 border-2 border-tertiary">
+              <div className="relative flex justify-between items-center pl-2 py-2 w-[100%] border-2 border-tertiary bg-tertiary">
+                <p className="font-bold">
+                  Do you offer express or overnight shipping?
+                </p>
+                <button
+                  type="button"
+                  className="absolute top-[-0.1em] right-[-3px] w-10 h-[45px]  bg-primary border-2 border-primary font-bold text-white text-xl text-center"
+                  onClick={() => toggleFaqDetails(6)}>
+                  {openFaqIndex === 6 ? "-" : "+"}
+                </button>
+              </div>
+              {openFaqIndex === 6 && (
+                <p className="p-2">
+                  Yes, we do offer express and overnight shipping options to
+                  ensure your packages reach their destination quickly and
+                  efficiently. Our express shipping services are designed for
+                  those who need their items delivered with urgency, while our
+                  overnight shipping option guarantees delivery by the next
+                  business day. These services are ideal for time-sensitive
+                  shipments and are available for both domestic and
+                  international destinations. Please check our shipping options
+                  during the checkout process for more details on pricing and
+                  delivery times.
+                </p>
+              )}
+            </div>
+
+            <div className="pt-4 border-2 border-tertiary">
+              <div className="relative flex justify-between items-center pl-2 py-2 w-[100%] border-2 border-tertiary bg-tertiary">
+                <p className="font-bold">
+                  Can I send fragile or valuable items through your service?
+                </p>
+                <button
+                  type="button"
+                  className="absolute top-[-0.1em] right-[-3px] w-10 h-[45px]  bg-primary border-2 border-primary font-bold text-white text-xl text-center"
+                  onClick={() => toggleFaqDetails(7)}>
+                  {openFaqIndex === 7 ? "-" : "+"}
+                </button>
+              </div>
+              {openFaqIndex === 7 && (
+                <p className="p-2">
+                  You can trust us to handle your fragile or valuable items with
+                  the utmost care. Our experienced team uses specialized
+                  packaging and protective measures to ensure safe delivery. We
+                  prioritize the security of your shipments, offering reinforced
+                  packaging and careful handling. For any concerns or special
+                  requests, feel free to contact our customer support. Your
+                  satisfaction and the safe arrival of your items are our top
+                  priorities.
+                </p>
               )}
             </div>
           </div>
